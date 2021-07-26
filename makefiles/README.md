@@ -1,10 +1,5 @@
 # Makefiles
 
-Date: July 22, 2021
-Tags: HPC
-Type: Project
-number: 20a
-
 # Intro
 
 Make is a way to compile and build large codebases, but do so in an efficient way as to have faster builds.
