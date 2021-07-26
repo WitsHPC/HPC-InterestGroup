@@ -1,5 +1,16 @@
 # Makefiles
-
+- [Makefiles](#makefiles)
+- [Intro](#intro)
+- [Examples](#examples)
+  - [Simple Example](#simple-example)
+  - [Incremental](#incremental)
+  - [Variables](#variables)
+  - [Automatic Variables](#automatic-variables)
+  - [Template rules](#template-rules)
+  - [Wildcards](#wildcards)
+  - [Structure and dependency](#structure-and-dependency)
+- [Other methods](#other-methods)
+- [Conclusion](#conclusion)
 # Intro
 
 Make is a way to compile and build large codebases, but do so in an efficient way as to have faster builds.
