@@ -1,0 +1,101 @@
+Doing some testing with parameters: pop size: 3
+number of generations: 200
+learning rate: 357
+configs: 424
+samples: 297
+Doing some testing with parameters: pop size: 436
+number of generations: 23
+learning rate: 293
+configs: 109
+samples: 389
+Doing some testing with parameters: pop size: 294
+number of generations: 71
+learning rate: 276
+configs: 446
+samples: 111
+Doing some testing with parameters: pop size: 452
+number of generations: 255
+learning rate: 464
+configs: 218
+samples: 151
+Doing some testing with parameters: pop size: 451
+number of generations: 460
+learning rate: 121
+configs: 158
+samples: 210
+Doing some testing with parameters: pop size: 163
+number of generations: 255
+learning rate: 206
+configs: 259
+samples: 364
+Doing some testing with parameters: pop size: 112
+number of generations: 487
+learning rate: 169
+configs: 345
+samples: 6
+Doing some testing with parameters: pop size: 243
+number of generations: 118
+learning rate: 50
+configs: 85
+samples: 402
+Doing some testing with parameters: pop size: 449
+number of generations: 109
+learning rate: 161
+configs: 170
+samples: 21
+Doing some testing with parameters: pop size: 422
+number of generations: 159
+learning rate: 338
+configs: 16
+samples: 63
+Doing some testing with parameters: pop size: 46
+number of generations: 239
+learning rate: 301
+configs: 438
+samples: 111
+Doing some testing with parameters: pop size: 136
+number of generations: 411
+learning rate: 131
+configs: 155
+samples: 490
+Doing some testing with parameters: pop size: 268
+number of generations: 52
+learning rate: 38
+configs: 31
+samples: 443
+Doing some testing with parameters: pop size: 475
+number of generations: 325
+learning rate: 350
+configs: 376
+samples: 468
+Doing some testing with parameters: pop size: 488
+number of generations: 396
+learning rate: 425
+configs: 99
+samples: 267
+Doing some testing with parameters: pop size: 221
+number of generations: 162
+learning rate: 375
+configs: 409
+samples: 388
+Doing some testing with parameters: pop size: 300
+number of generations: 371
+learning rate: 291
+configs: 218
+samples: 436
+Doing some testing with parameters: pop size: 308
+number of generations: 268
+learning rate: 436
+configs: 71
+samples: 319
+Doing some testing with parameters: pop size: 151
+number of generations: 388
+learning rate: 133
+configs: 213
+samples: 145
+Doing some testing with parameters: pop size: 206
+number of generations: 236
+learning rate: 405
+configs: 12
+samples: 380
+Final results are:: score: 92.76101237357489 | Accuracy: 77.21511753146233 | Diversity: 46

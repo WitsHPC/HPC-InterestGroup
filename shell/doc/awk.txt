@@ -1,0 +1,3 @@
+1 one eins uno
+2 two zwei dos
+3 three drei tres

@@ -1,0 +1,101 @@
+Doing some testing with parameters: pop size: 346
+number of generations: 203
+learning rate: 109
+configs: 179
+samples: 119
+Doing some testing with parameters: pop size: 499
+number of generations: 7
+learning rate: 334
+configs: 80
+samples: 229
+Doing some testing with parameters: pop size: 285
+number of generations: 291
+learning rate: 488
+configs: 231
+samples: 69
+Doing some testing with parameters: pop size: 351
+number of generations: 92
+learning rate: 435
+configs: 313
+samples: 351
+Doing some testing with parameters: pop size: 0
+number of generations: 313
+learning rate: 192
+configs: 345
+samples: 265
+Doing some testing with parameters: pop size: 148
+number of generations: 376
+learning rate: 349
+configs: 306
+samples: 287
+Doing some testing with parameters: pop size: 103
+number of generations: 342
+learning rate: 310
+configs: 167
+samples: 466
+Doing some testing with parameters: pop size: 257
+number of generations: 455
+learning rate: 181
+configs: 25
+samples: 191
+Doing some testing with parameters: pop size: 232
+number of generations: 20
+learning rate: 183
+configs: 324
+samples: 352
+Doing some testing with parameters: pop size: 280
+number of generations: 386
+learning rate: 69
+configs: 167
+samples: 269
+Doing some testing with parameters: pop size: 324
+number of generations: 368
+learning rate: 376
+configs: 435
+samples: 351
+Doing some testing with parameters: pop size: 376
+number of generations: 380
+learning rate: 160
+configs: 448
+samples: 251
+Doing some testing with parameters: pop size: 211
+number of generations: 27
+learning rate: 186
+configs: 226
+samples: 250
+Doing some testing with parameters: pop size: 414
+number of generations: 235
+learning rate: 265
+configs: 412
+samples: 449
+Doing some testing with parameters: pop size: 225
+number of generations: 184
+learning rate: 336
+configs: 346
+samples: 489
+Doing some testing with parameters: pop size: 441
+number of generations: 94
+learning rate: 441
+configs: 43
+samples: 195
+Doing some testing with parameters: pop size: 89
+number of generations: 479
+learning rate: 38
+configs: 82
+samples: 56
+Doing some testing with parameters: pop size: 73
+number of generations: 75
+learning rate: 102
+configs: 476
+samples: 11
+Doing some testing with parameters: pop size: 208
+number of generations: 341
+learning rate: 465
+configs: 236
+samples: 210
+Doing some testing with parameters: pop size: 368
+number of generations: 10
+learning rate: 94
+configs: 11
+samples: 400
+Final results are:: score: 333.9790074451229 | Accuracy: 51.96204829564096 | Diversity: 21
