@@ -341,7 +341,27 @@ For example,
 grep Hello myfile
 cat !$ # will cat myfile
 ```
+# TMUX
 
+One other very useful command is tmux (terminal multiplexer), which allows you to have multiple terminals open in the same window. You can split them vertically and horisontally, which allows you to see multiple things at once. 
+
+Another very useful use case is when you are using ssh, you can create a tmux window on the remote machine, and any long running commands will continue to run, even if the ssh session disconnects!
+
+[Here](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/) is a great beginner tutorial. Some basic commands are:
+
+`tmux` to open a session
+
+Then, when inside a tmux session you can do different things by using
+
+`Ctrl-B` and some other key
+
+The way to do this is to hold the control key, press the b key, and then let go of them before pressing the next key.
+
+`C-b %` and `C-b "` split panes (e.g. control b and then either `%` or `"` (shift '))
+
+- `C-b <arrow>` (arrow being one of the 4 arrow keys) can move around
+- `C-b d` detaches, i.e. hides the session (it is still open though)
+- `tmux a` (when you are not in tmux) opens the most recent tmux window
 # Sources
 
 Here are some very useful sources, and I'd suggest having a look at them for more commands, techniques and ideas.
