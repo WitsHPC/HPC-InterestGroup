@@ -29,7 +29,7 @@ The structure of this talk will be as follows:
 To actually use a shell, you can do the following:
 
 - **Linux**: Just right click on the desktop and select open in terminal
-- **Mac**: Just search for the Terminal application and open it. Most commands and techniques are discussed here is applicable to Mac, but the directory
+- **Mac**: Just search for the Terminal application and open it. Most commands and techniques are discussed here is applicable to Mac, but the directory structure is different.
 - **Windows**: Install the [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10), which allows you to use a linux shell inside windows.
 
 You should now have a screen with a blinking cursor where you can type text in.
@@ -52,6 +52,7 @@ In Unix, basically everything is a file, so the following commands are super use
     - `cd`: Change directory to the home directory
     - `cd -` Change directory to the previous one
     - `cd dir` navigate to the `dir` directory.
+    - `cd ..` → CD one directory up the tree
 - `pwd` **P**rints the current (**w**orking) **d**irectory
 - `cat` Displays a file. Usage (among others): `cat filename`
 - `cp` **C**opies a file or directory. Usage:
@@ -72,6 +73,10 @@ In Unix, basically everything is a file, so the following commands are super use
 - `echo`: Will print out something. For example, `echo 1` will print out 1.
 - `mkdir`: Will create the directory specified, e.g. `mkdir my_directory`
     - Shortcut if you want to create nested directories: `mkdir my_directory/subdir` will fail, but `mkdir -p my_directory/subdir` will work
+
+- `find .`
+  - Finds files in a directory. Discussed more later
+
 
 Using these commands, you can navigate the directory structure, read files, copy and move them, and see where you are.
 
