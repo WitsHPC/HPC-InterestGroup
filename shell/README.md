@@ -1,4 +1,27 @@
 # Shell Intro
+- [Shell Intro](#shell-intro)
+- [Introduction](#introduction)
+- [Get Started](#get-started)
+- [Files](#files)
+- [Files and Input](#files-and-input)
+  - [Redirection](#redirection)
+    - [Pipes](#pipes)
+    - [Redirecting to files](#redirecting-to-files)
+- [Editing](#editing)
+- [Directories and Permissions](#directories-and-permissions)
+- [Searching](#searching)
+- [Transformation](#transformation)
+    - [Sed](#sed)
+    - [Awk](#awk)
+- [Useful Tricks](#useful-tricks)
+- [TMUX](#tmux)
+- [Sources](#sources)
+- [Examples and Exercises](#examples-and-exercises)
+    - [Simple commands](#simple-commands)
+    - [Searching](#searching-1)
+    - [Transforming](#transforming)
+    - [Chaining](#chaining)
+  - [Potential Answers](#potential-answers)
 # Introduction
 
 Unix is an operating system that started in the 1970s. Many current operating systems are based off of Unix, notably Linux and Apple's macOS. 
