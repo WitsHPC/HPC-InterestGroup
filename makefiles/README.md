@@ -1,6 +1,9 @@
 # Makefiles
 - [Makefiles](#makefiles)
 - [Intro](#intro)
+  - [Speed](#speed)
+  - [Incremental compilation](#incremental-compilation)
+- [Make](#make)
 - [Examples](#examples)
   - [Simple Example](#simple-example)
   - [Incremental](#incremental)
@@ -12,6 +15,62 @@
 - [Other methods](#other-methods)
 - [Conclusion](#conclusion)
 # Intro
+Building code is a super common step. From compiling your own Fortran or C/C++ code, to compiling typescript to javascript, to using other peoples software, and a whole host of other things.
+
+We'll mostly consider compiling C code, and some considerations that are important to make with respect to that.
+
+There are many different ways to go about this process, and we will start off simple, and then see how the complexities naturally evolve.
+
+To compile a single file, that's relatively easy:
+
+```latex
+gcc myfile.c -o myprog
+```
+
+But, what if we use flags?
+
+```latex
+gcc myfile.c -O3 -std=c99 -DFLAG -fno-omit-frame-pointer -march=native -I/my/include -I/my/other/include -o myprog
+```
+
+Kind of annoying to retype it, but what's the problem? We can simply press the up arrow.
+
+What if you have multiple files?
+
+Easy, just compile them at once
+
+```latex
+gcc myfile.c myfile1.c myfile2.c myfile3.c -o myprog
+```
+
+What if some files need to be compiled using different flags, and it's not just one command to use the up arrow on?
+
+Easy, shell script
+
+```bash
+# build.sh
+
+gcc myfile1.c $(FLAGS1) -c -o file1.o
+gcc myfile2.c $(FLAGS2) -c -o file2.o
+
+# link
+gcc file1.o file2.o -o myprog
+```
+
+## Speed
+
+If you only compile something once, the above is fine. But, what if you want to change some files, add features, etc?
+
+Some large projects can take **hours** to fully compile (have a go at compiling gcc from source if you're skeptical)
+
+## Incremental compilation
+
+**Compile everything to a .o file first**
+
+Then, only recompile files that change (which should be relatively few) and just relink.
+
+This is the main idea behind Make.
+# Make
 
 Make is a way to compile and build large codebases, but do so in an efficient way as to have faster builds.
 
