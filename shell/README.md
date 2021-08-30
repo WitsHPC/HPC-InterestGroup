@@ -8,6 +8,7 @@
     - [Pipes](#pipes)
     - [Redirecting to files](#redirecting-to-files)
 - [Editing](#editing)
+- [Environment Variables](#environment-variables)
 - [Directories and Permissions](#directories-and-permissions)
 - [Searching](#searching)
 - [Transformation](#transformation)
@@ -191,6 +192,37 @@ Since files are such a critical part of linux, it's useful to know how to edit t
 - `nano`  → Simple terminal editor that you can quickly edit a file with. Relatively straightforward to use.
 - `vim`    → More advanced editor, that has lots of useful features for quick navigation and editing, but it has a steep learning curve.
 - `Visual Studio Code` → Usually you'll only use this if you want to edit lots of files. For small files, the other options are faster and definitely enough for just assorted and ad-hoc file editing.
+
+# Environment Variables
+
+Linux makes use of many environment variables that either point to files or directories, indicate some flag condition, or that just contain useful information. Many of these are used by programs.
+
+You can look at the values of these variables using `echo`, for example:
+
+- `echo $PATH` → A `:` separated list of directories where the shell looks for programs when you type in only their name
+- `echo $HOME` → The home directory (this is where you navigate to when you simply type `cd` or `cd ~`
+
+And there are many more, and you can view more of them using `printenv`
+
+You can edit these variables using the following syntax:
+
+`export $VAR=new_value`
+
+for example, 
+
+`export PATH=$PATH:/my/path` (add `/my/path` to the PATH)
+
+`export HOME=/home/test/` (change the HOME variable)
+
+### Beware
+
+Try to run `export PATH=`
+
+and then run `ls`. It won't be found because you overwrote your path, and the shell doesn't know where to look for programs! 
+
+All of these edits are temporary however, and you can get back to a normal state by simply closing and reopening the terminal.
+
+If you want to make permanent changes, you can add some of these commands in a file called `~/.bashrc`, which will run every time a new terminal / shell is opened.
 
 # Directories and Permissions
 
