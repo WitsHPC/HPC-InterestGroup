@@ -325,6 +325,6 @@ For some exercises, feel free to do the following:
 
 # Sources
 
-Victor Eijkhout's MPI / MPI book: [https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-basics.html](https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-basics.html)
+Victor Eijkhout's OpenMP / MPI book: [https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-basics.html](https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-basics.html)
 
 [https://www.openmp.org/](https://www.openmp.org/)
