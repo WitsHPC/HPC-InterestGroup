@@ -64,9 +64,17 @@ We also have a useful `parallel for` construction.
 
 Let's consider a running problem to calculate ![\pi](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cpi).
 
-The derivative of ![\arctan(x)](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Carctan%28x%29) is ![\frac{1}{1 + x^2}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cfrac%7B1%7D%7B1+%2B+x%5E2%7D), and we know ![\arctan(1) - \arctan(0) = \frac{\pi}{4}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Carctan%281%29+-+%5Carctan%280%29+%3D+%5Cfrac%7B%5Cpi%7D%7B4%7D)
+The derivative of ![\arctan(x)](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Carctan%28x%29) is 
 
-Thus, ![\pi = 4 \int_0^1{\frac{1}{1 + x^2}}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cpi+%3D+4+%5Cint_0%5E1%7B%5Cfrac%7B1%7D%7B1+%2B+x%5E2%7D%7D), and we can calculate ![\pi](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cpi) using a Riemann sum.
+![\frac{1}{1 + x^2}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cfrac%7B1%7D%7B1+%2B+x%5E2%7D), and we know 
+
+![\arctan(1) - \arctan(0) = \frac{\pi}{4}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Carctan%281%29+-+%5Carctan%280%29+%3D+%5Cfrac%7B%5Cpi%7D%7B4%7D)
+
+Thus, 
+
+![\pi = 4 \int_0^1{\frac{1}{1 + x^2}}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cpi+%3D+4+%5Cint_0%5E1%7B%5Cfrac%7B1%7D%7B1+%2B+x%5E2%7D%7D)
+
+ and we can calculate ![\pi](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cpi) using a Riemann sum.
 
 The idea here is simple, define a small ![dx](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+dx), and then compute
 
