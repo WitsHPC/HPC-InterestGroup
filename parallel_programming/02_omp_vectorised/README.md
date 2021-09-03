@@ -70,7 +70,11 @@ Thus, ![\pi = 4 \int_0^1{\frac{1}{1 + x^2}}](https://render.githubusercontent.co
 
 The idea here is simple, define a small ![dx](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+dx), and then compute
 
-![\sum_{i=0}^N {f(x) dx}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Csum_%7Bi%3D0%7D%5EN+%7Bf%28x%29+dx%7D), where N is how many chunks we need to integrate, i.e. ![\lceil{\frac{1}{dx}}\rceil](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Clceil%7B%5Cfrac%7B1%7D%7Bdx%7D%7D%5Crceil)
+![\sum_{i=0}^N {f(x) dx}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Csum_%7Bi%3D0%7D%5EN+%7Bf%28x%29+dx%7D)
+
+ where N is how many chunks we need to integrate, i.e. 
+ 
+ ![\lceil{\frac{1}{dx}}\rceil](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Clceil%7B%5Cfrac%7B1%7D%7Bdx%7D%7D%5Crceil)
 
 And we can do the same in code, like here:
 
