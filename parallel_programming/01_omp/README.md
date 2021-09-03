@@ -254,7 +254,7 @@ int main(){
 	}
 	int N = v.size();
 	// shared variable
-	std::vector<int> totals (omp_get_num_threads(), 0);
+	std::vector<int> totals (NUM_THREADS, 0);
 	#pragma omp parallel
 {
 		int num_threads = omp_get_num_threads();
@@ -325,6 +325,6 @@ For some exercises, feel free to do the following:
 
 # Sources
 
-Victor Eijkhout's MPI / MPI book: [https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-basics.html](https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-basics.html)
+Victor Eijkhout's OpenMP / MPI book: [https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-basics.html](https://pages.tacc.utexas.edu/~eijkhout/pcse/html/omp-basics.html)
 
 [https://www.openmp.org/](https://www.openmp.org/)
