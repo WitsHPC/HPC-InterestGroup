@@ -318,7 +318,7 @@ double calc_integral_omp_simd_and_par_for(double dx) {
 
 ## Results
 
-For the calculating $\pi$ code, we have the following results for a few different methods:
+For the calculating ![\pi](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cpi) code, we have the following results for a few different methods:
 
 AVX instructions can provide a massive speedup, and that can be combined with openmp to get great speedups. This is on 4 cores, and the final speedup we get is about `7-8x` when using both AVX and parallelism.
 
