@@ -62,15 +62,15 @@ We also have a useful `parallel for` construction.
 
 # OpenMP
 
-Let's consider a running problem to calculate $\pi$.
+Let's consider a running problem to calculate ![\pi](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cpi).
 
-The derivative of $\arctan(x)$ is $\frac{1}{1 + x^2}$, and we know $\arctan(1) - \arctan(0) = \frac{\pi}{4}$
+The derivative of ![\arctan(x)](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Carctan%28x%29) is ![\frac{1}{1 + x^2}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cfrac%7B1%7D%7B1+%2B+x%5E2%7D), and we know ![\arctan(1) - \arctan(0) = \frac{\pi}{4}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Carctan%281%29+-+%5Carctan%280%29+%3D+%5Cfrac%7B%5Cpi%7D%7B4%7D)
 
-Thus, $\pi = 4 \int_0^1{\frac{1}{1 + x^2}}$, and we can calculate $\pi$ using a Riemann sum.
+Thus, ![\pi = 4 \int_0^1{\frac{1}{1 + x^2}}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cpi+%3D+4+%5Cint_0%5E1%7B%5Cfrac%7B1%7D%7B1+%2B+x%5E2%7D%7D), and we can calculate ![\pi](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cpi) using a Riemann sum.
 
-The idea here is simple, define a small $dx$, and then compute
+The idea here is simple, define a small ![dx](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+dx), and then compute
 
-$\sum_{i=0}^N {f(x) dx}$, where $N$ is how many chunks we need to integrate, i.e. $\lceil{\frac{1}{dx}}\rceil$
+![\sum_{i=0}^N {f(x) dx}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Csum_%7Bi%3D0%7D%5EN+%7Bf%28x%29+dx%7D), where N is how many chunks we need to integrate, i.e. ![\lceil{\frac{1}{dx}}\rceil](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Clceil%7B%5Cfrac%7B1%7D%7Bdx%7D%7D%5Crceil)
 
 And we can do the same in code, like here:
 
@@ -101,7 +101,7 @@ double calc_integral_serial(double dx) {
 }
 ```
 
-And the parallel code is also relatively simple, we let each thread perform one section of the integration (e.g. if there are 3 threads, then thread 0 will integrate from 0 to 0.333, thread 1 will integrate from 0.3333 to 0.666 and the last thread will integrate from 0.6666 to 1), and the final answer will be the sum of the sub-answers (as you can split integrals like $\int_a^bf(x)dx = \int_a^cf(x)dx + \int_c^bf(x)dx$ )
+And the parallel code is also relatively simple, we let each thread perform one section of the integration (e.g. if there are 3 threads, then thread 0 will integrate from 0 to 0.333, thread 1 will integrate from 0.3333 to 0.666 and the last thread will integrate from 0.6666 to 1), and the final answer will be the sum of the sub-answers (as you can split integrals like ![\int_a^bf(x)dx = \int_a^cf(x)dx + \int_c^bf(x)dx](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cint_a%5Ebf%28x%29dx+%3D+%5Cint_a%5Ecf%28x%29dx+%2B+%5Cint_c%5Ebf%28x%29dx))
 
 ```cpp
 double calc_integral_par(double dx) {
