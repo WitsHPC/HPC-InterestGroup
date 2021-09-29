@@ -6,3 +6,4 @@ This is a repo that contains some notes and code for the HPC interest group. It 
 - [Makefiles](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/makefiles)
 - [Parallel Programming 1 - OpenMP](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/parallel_programming/01_omp)
 - [Parallel Programming 2 - OpenMP & Vectorised Instructions](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/parallel_programming/02_omp_vectorised)
+- [Graphical Programming 1 - SFML](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/graphical_programming/01_sfml)
