@@ -29,7 +29,7 @@ The TLDR here is:
 edit `~/.ssh/config` and do something like this:
 
 ```bash
-	Host my_server1
+Host my_server1
      HostName 123.456.17.8
      User myname
 
