@@ -206,7 +206,7 @@ And there are many more, and you can view more of them using `printenv`
 
 You can edit these variables using the following syntax:
 
-`export $VAR=new_value`
+`export VAR=new_value`
 
 for example, 
 
