@@ -15,7 +15,6 @@
   - [More Complex Code](#more-complex-code)
   - [Communication](#communication)
   - [Sources](#sources)
-  - [- https://docs.python.org/3/library/multiprocessing.html](#--httpsdocspythonorg3librarymultiprocessinghtml)
   - [Conclusion](#conclusion)
 
 ---
@@ -166,6 +165,8 @@ If you are using `C/C++`, then [MPI](https://www.open-mpi.org/) and [OpenMP](htt
 - https://medium.com/ki-labs-engineering/busting-the-myth-around-multithreading-in-python-5c29653affd2
 - https://www.ray.io/
 - https://docs.python.org/3/library/multiprocessing.html
+
+
 ---
 
 ## Conclusion
