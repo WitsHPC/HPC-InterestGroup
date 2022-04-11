@@ -1,6 +1,4 @@
-import multiprocessing
 from time import sleep
-from multiprocessing import Process
 import multiprocessing
 
 def main(seed: int):

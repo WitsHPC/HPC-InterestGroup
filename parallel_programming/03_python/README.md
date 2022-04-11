@@ -1,21 +1,21 @@
 # Python Parallel Programming
 - [Python Parallel Programming](#python-parallel-programming)
-  - [Introduction](#introduction)
-  - [What is Parallelism?](#what-is-parallelism)
-  - [Why is it useful?](#why-is-it-useful)
-  - [Use Cases](#use-cases)
-  - [How to use it?](#how-to-use-it)
-  - [Running Example](#running-example)
-  - [Example 1 - Bash](#example-1---bash)
-  - [Example 1 - Bash](#example-1---bash-1)
-  - [Example 2 - Multi-Processing](#example-2---multi-processing)
-  - [Example 2 - Multi-Processing](#example-2---multi-processing-1)
-  - [Example 3 - Ray](#example-3---ray)
-  - [Example 3 - Ray](#example-3---ray-1)
-  - [More Complex Code](#more-complex-code)
-  - [Communication](#communication)
-  - [Sources](#sources)
-  - [Conclusion](#conclusion)
+	- [Introduction](#introduction)
+	- [What is Parallelism?](#what-is-parallelism)
+	- [Why is it useful?](#why-is-it-useful)
+	- [Use Cases](#use-cases)
+	- [How to use it?](#how-to-use-it)
+	- [Running Example](#running-example)
+	- [Example 1 - Bash](#example-1---bash)
+	- [Example 1 - Bash](#example-1---bash-1)
+	- [Example 2 - Multi-Processing](#example-2---multi-processing)
+	- [Example 2 - Multi-Processing](#example-2---multi-processing-1)
+	- [Example 3 - Ray](#example-3---ray)
+	- [Example 3 - Ray](#example-3---ray-1)
+	- [More Complex Code](#more-complex-code)
+	- [Communication](#communication)
+	- [Sources](#sources)
+	- [Conclusion](#conclusion)
 
 ---
 
@@ -101,8 +101,6 @@ wait; # wait for final result
 ```python
 import multiprocessing
 from time import sleep
-from multiprocessing import Process
-import multiprocessing
 
 def main(seed: int):
 	sleep(5)
