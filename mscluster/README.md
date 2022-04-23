@@ -11,6 +11,8 @@
 - [Installing Conda](#installing-conda)
 - [Datasets](#datasets)
 - [Final Notes](#final-notes)
+- [Errors](#errors)
+  - [Cuda - No kernel image is available for execution on the device](#cuda---no-kernel-image-is-available-for-execution-on-the-device)
 
 # What is this?
 
@@ -218,3 +220,19 @@ And then the data should be there.
 Comments, suggestions or pull requests are welcome.
 
 There are many other things you could do to make your experience better, like using [SSH Keys](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2), learning about the linux shell ([here](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/shell), [here](https://bootlin.com/doc/legacy/command-line/unix_linux_introduction.pdf) and [here](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Introduction)) or using [tmux](https://github.com/tmux/tmux/wiki).
+
+
+# Errors
+## Cuda - No kernel image is available for execution on the device
+The error is something like this:
+```
+NVIDIA GeForce RTX 3090 with CUDA capability sm_86 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
+If you want to use the NVIDIA GeForce RTX 3090 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+```
+
+If this happens, then the easiest solution is to just reinstall PyTorch (on the batch nodes) using:
+
+```
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+```
