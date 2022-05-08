@@ -1,6 +1,6 @@
 # Ncurses Introduction
 <p align="center">
-![](images/matrix.gif)
+    <img src='images/matrix.gif'>
 </p>
 
 
