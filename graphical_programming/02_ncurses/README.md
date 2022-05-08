@@ -1,6 +1,7 @@
 # Ncurses Introduction
-
+<p align="center">
 ![](images/matrix.gif)
+</p>
 
 
 **To use this, just run**
@@ -11,7 +12,7 @@ make
 ./main
 ```
 
-Also see [here](https://github.com/Michael-Beukman/curses-game-of-life) for more about the second file `main_game_of_life`. This can be run using
+Also see [here](https://github.com/Michael-Beukman/curses-game-of-life) for more about the second file `main_game_of_life.cpp`. This can be run using
 ```
 make life
 ./life
