@@ -94,7 +94,7 @@ int main(int argc, char** argv) {
     // Used to get a consistent frame rate
     int time_now = current_microseconds();
     while (1) {
-        clear();
+        erase();
         // Draw
         for (int y = 0; y < cells.size(); ++y) {
             for (int x = 0; x < cells[y].size(); ++x) {
