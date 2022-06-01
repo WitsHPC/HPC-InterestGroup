@@ -236,3 +236,13 @@ If this happens, then the easiest solution is to just reinstall PyTorch (on the 
 ```
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 ```
+
+
+Or (thanks to Manuel Fokam), alternatively, you can use pip to install it, or put the following in the `requirements.txt` file and run `pip install -r requirements.txt`
+```
+--extra-index-url https://download.pytorch.org/whl/cu113 <- change this to your preferred cuda version
+torch~=1.11.0
+
+--extra-index-url https://download.pytorch.org/whl/cu113
+torchvision~=0.12.0 <- add torchvision if you need it. you can do the same for torchaudio
+```
