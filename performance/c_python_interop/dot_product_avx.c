@@ -1,5 +1,5 @@
 #include <immintrin.h>
-extern float dot_product(int length, float* a, float* b, float* ans){
+extern void dot_product(int length, float* a, float* b, float* ans){
     // assume length % 8 == 0
     *ans = 0;
     const int ones = 0xFFFFFFFF;
