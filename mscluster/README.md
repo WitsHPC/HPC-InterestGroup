@@ -1,4 +1,6 @@
 # How to use the MSCluster
+<details><summary><strong>Table of Contents</strong></summary>
+
 - [How to use the MSCluster](#how-to-use-the-mscluster)
 - [Intro](#intro)
   - [What is this document?](#what-is-this-document)
@@ -24,6 +26,9 @@
   - [Weights and Biases Issues](#weights-and-biases-issues)
   - [Ray Issue](#ray-issue)
 
+</details>
+
+-----
 # Intro 
 ## What is this document?
 
