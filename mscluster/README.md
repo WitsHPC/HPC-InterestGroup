@@ -222,7 +222,7 @@ Get the latest download link here: [https://www.anaconda.com/products/individual
 wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
 
 # Install anaconda, and follow instructions / prompts
-bash Anaconda3-2021.05-Linux-x86_64.sh
+bash Anaconda3-2022.05-Linux-x86_64.sh
 
 # Then, conda should be in your shell 
 # (you might just need to run `source ~/.bashrc`)
