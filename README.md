@@ -14,6 +14,7 @@ This is a repo that contains some notes and code for the HPC interest group. It 
   - [Parallel Programming 3 - Python](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/parallel_programming/03_python)
   - [Parallel Programming 4 - CUDA](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/parallel_programming/04_cuda)
   - [Parallel Programming 5 - MPI](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/parallel_programming/05_mpi)
+  - [Parallel Programming 6 - More CUDA Programming](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/parallel_programming/06_cuda_programming)
 - Graphical Programming
   - [Graphical Programming 1 - SFML](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/graphical_programming/01_sfml)
   - [Graphical Programming 2 - NCurses](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/graphical_programming/02_ncurses)
