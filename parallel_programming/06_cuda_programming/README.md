@@ -147,3 +147,4 @@ vector_add<<<N/num_threads_per_block, num_threads_per_block>>>(N, d_a, d_b, d_c)
 + CUDA by Example book
 + https://developer.nvidia.com/blog/even-easier-introduction-cuda/
 + https://cuda-tutorial.readthedocs.io/en/latest/tutorials/tutorial01/
++ See [here](https://github.com/Michael-Beukman/SFML-Mandelbrot) for a slightly more in-depth example
