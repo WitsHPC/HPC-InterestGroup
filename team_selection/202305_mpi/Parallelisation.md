@@ -61,5 +61,6 @@
 - multi threading
 	- shared memory multiprocessing
 	- primary thread forks into sub threads
+[resources](https://en.wikipedia.org/wiki/OpenMP)
 ---
 
