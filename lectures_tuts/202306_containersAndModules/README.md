@@ -94,7 +94,8 @@ Make sure to choose the appropriate options for timezone.
 
 You now need to initialise the ```lmod``` package. Run the following command:
 ```bash
-source /etc/profile.d/lmod.sh
+echo "source /etc/profile.d/lmod.sh" >> ~/.bashrc
+source ~/.bashrc
 ```
 > What does the ```source``` command do? Answer this question for yourself or ask a mentor
 
@@ -113,3 +114,26 @@ Use the ```mpi_install.sh``` script to install the ```openmpi``` package. Run th
 bash ./mpi_install.sh
 ```
 It will prompt you for an install path, enter one and continue.
+
+Once all the build things are finished, run the following command:
+```bash
+module avail
+```
+You should see now see a module called openmpi. We can now load this module using the ```module load``` command. Run the following command:
+```bash
+module load openmpi
+```
+You can test its loaded by running the ```module list``` command. You should see the following output:
+```bash
+Currently Loaded Modulefiles:
+  1) openmpi
+```
+> What does the ```module list``` command do? Answer this question for yourself or ask a mentor
+
+Now run the ```module_tester.sh``` script. You will see the mpi and version printed in the terminal. 
+
+# Challenge
+
+Now that you have a basic understanding of docker and modules, try the following challenge:
+
+- Using the container you have now made, install 2 more versions of an mpi (any mpi of your choice). Edit the module files so that all 3 installed versions of mpi are available as modules. You must then write a bash script to show that the modules are working correctly. This script should load each module, and run the ```module_tester.sh``` script for each module. The output of this script should be the mpi and version printed in the terminal.
