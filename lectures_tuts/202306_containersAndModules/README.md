@@ -137,3 +137,6 @@ Now run the ```module_tester.sh``` script. You will see the mpi and version prin
 Now that you have a basic understanding of docker and modules, try the following challenge:
 
 - Using the container you have now made, install 2 more versions of an mpi (any mpi of your choice). Edit the module files so that all 3 installed versions of mpi are available as modules. You must then write a bash script to show that the modules are working correctly. This script should load each module, and run the ```module_tester.sh``` script for each module. The output of this script should be the mpi and version printed in the terminal.
+   - Hint: you can use the ```module purge``` command to unload all modules
+   - Hint: edit the mpi_install.sh script to install other versions of openmpi
+- Submit a screenshot of the output of ```module_tester.sh``` to moodle
