@@ -1,4 +1,24 @@
-#!/bin/bash
+#!/bin/env bash
+
+# Check if wget is installed
+if ! command -v wget &> /dev/null
+then
+    echo "wget not found, installing..."
+    apt-get update
+    apt-get install -y wget
+else
+    echo "wget is already installed"
+fi
+
+# Check if make is installed
+if ! command -v make &> /dev/null
+then
+    echo "make not found, installing..."
+    apt-get update
+    apt-get install -y build-essential
+else
+    echo "make is already installed"
+fi
 
 # Get the installation directory from the user
 read -p "Enter the installation directory: " INSTALL_DIR
