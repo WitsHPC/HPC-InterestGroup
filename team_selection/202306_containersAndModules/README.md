@@ -96,6 +96,7 @@ You now need to initialise the ```lmod``` package. Run the following command:
 ```bash
 echo "source /etc/profile.d/lmod.sh" >> ~/.bashrc
 source ~/.bashrc
+module avail
 ```
 > What does the ```source``` command do? Answer this question for yourself or ask a mentor
 
