@@ -20,6 +20,28 @@ else
     echo "make is already installed"
 fi
 
+# Check if ssh is installed
+if ! command -v ssh &> /dev/null
+then
+    echo "ssh not found, installing..."
+    apt-get update
+    apt-get install -y ssh
+else
+    echo "ssh is already installed"
+fi
+
+# Check if tar is installed
+if ! command -v tar &> /dev/null
+then
+    echo "tar not found, installing..."
+    apt-get update
+    apt-get install -y tar
+else
+    echo "tar is already installed"
+fi
+
+
+
 # Get the installation directory from the user
 read -p "Enter the installation directory: " INSTALL_DIR
 
