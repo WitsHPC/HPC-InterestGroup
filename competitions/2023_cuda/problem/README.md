@@ -27,10 +27,12 @@ Your input will be passed in via standard in and will consist of several lines. 
 - Then, `A`, `B`, and `C`, indicate the numbers for the rules mentioned above
 
 We guarantee that the parameters will have the following bounds:
-$$10 \leq w, h, \leq 10^4 \\
+```math
+10 \leq w, h, \leq 10^4 \\
 0 \leq A, B, C \leq 8 \\
 1 \leq n \leq 10^6 \\
-1 \leq m \leq 10^8 \\$$
+1 \leq m \leq 10^8 \\
+```
 
 The next `w` lines will indicate the initial state. Each line will have `h` characters, each of which will be either `.` (dead) or `#` (alive).
 
