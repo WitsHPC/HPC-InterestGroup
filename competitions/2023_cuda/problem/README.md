@@ -40,7 +40,7 @@ We guarantee that the parameters will have the following bounds:
 1 \leq m \leq 10^8 \\
 ```
 
-The next `w` lines will indicate the initial state. Each line will have `h` characters, each of which will be either `.` (dead) or `#` (alive).
+The next `h` lines will indicate the initial state. Each line will have `w` characters, each of which will be either `.` (dead) or `#` (alive).
 
 ## Output
 
