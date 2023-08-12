@@ -28,9 +28,15 @@ Your input will be passed in via standard in and will consist of several lines. 
 
 We guarantee that the parameters will have the following bounds:
 ```math
-10 \leq w, h, \leq 10^4 \\
-0 \leq A, B, C \leq 8 \\
-1 \leq n \leq 10^6 \\
+10 \leq w, h, \leq 10^4
+```
+```math
+0 \leq A, B, C \leq 8
+```
+```math
+1 \leq n \leq 10^6
+```
+```math
 1 \leq m \leq 10^8 \\
 ```
 
