@@ -3,7 +3,7 @@ INCFLAGS=-I$(INC) -I. -I..
 CC=gcc
 NVCC=nvcc
 
-all: bin/vector_addition bin/matrix_mult
+all: vector_addition matrix_mult
 
 
 vector_addition: vector_addition.cu DIR
