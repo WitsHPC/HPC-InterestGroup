@@ -155,7 +155,6 @@ So, when we had our kernel above running `c[threadIdx.x] = a[threadIdx.x] + b[th
 
 When writing CUDA code it is also important to note that while there are multiple threads, they are organised into thread blocks, each thread block having multiple threads within it. Each thread block has a particular ID  (`blockIdx`) and each thread has a particular ID within this block (`threadIdx`).
 
-What is the importance of threads and thread blocks? TODO
 
 So, if we had to make our above example more correct, we could instead write:
 ```c
@@ -167,7 +166,7 @@ GPUs have their own dedicated memory. Beyond that, the memory is divided into di
 + Global Memory   (this is the general memory that you allocate using `cudaMalloc`)
 + Shared Memory   (this is memory that is shared between threads in a block, and is very fast)
 + Constant Memory (this is memory that cannot change, i.e. it is read-only and provides fast read-times if all threads in a block access the same value)
-+ Texture Memory (This is memory where caching works on a 2D grid, and is very fast for 2D access patterns). TODO explain this more.
++ Texture Memory (This is memory where caching works on a 2D grid, and is very fast for 2D access patterns).
 
 We'll only be looking at global memory and shared memory in this tutorial. But feel free to investigate the other types of memory.
 
