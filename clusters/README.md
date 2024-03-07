@@ -38,9 +38,9 @@ The filesystem, i.e., your home directory is often shared on a cluster; this mea
 
 Importantly, you should never run actual code on the headnode, as it may crash it/make everyone else's lives much harder. Always run code either via `srun` or `sbatch` (scroll down for usage and examples).
 
-<p style="text-align:center" align="middle">
+<div align="center">
 <img src="cluster.png">
-</p>
+</div>
 
 ## Assumptions
 This is very much focused on a [slurm](https://slurm.schedmd.com/documentation.html)-based cluster, but the general comments should be applicable more broadly.
