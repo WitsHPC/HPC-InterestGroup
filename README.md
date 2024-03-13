@@ -14,7 +14,7 @@ See below for a list of previous talks/tutorials.
 
 
 ## Contents
-### Compiling / General Linux 🐧
+### 🐧 Compiling / General Linux 
 This section involves learning how to become proficient in Linux, including using the terminal, how to compile software from source and how to use Vim!
 - Bash and Shell Programming
   - [Intro to Bash](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/shell)
@@ -26,7 +26,7 @@ This section involves learning how to become proficient in Linux, including usin
     - [Tutorial - Compiling BTOP](https://github.com/Michael-Beukman/HPC-InterestGroup/blob/main/team_selection/202304_compiling)
 - [Vim](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/linux/vim)
 
-### Parallel Programming ⛓️
+### ⛓️ Parallel Programming 
 HPC is about parallelisation, and this section has lots of tutorials and resources on how to do parallel programming in a variety of languages.
 - [1 - OpenMP](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/parallel_programming/01_omp)
   - [1.1 - OpenMP & Vectorised Instructions](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/parallel_programming/02_omp_vectorised)
@@ -38,18 +38,18 @@ HPC is about parallelisation, and this section has lots of tutorials and resourc
 - [4 - MPI](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/parallel_programming/05_mpi)
   - [4.1 - MPI Examples](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/team_selection/202305_mpi)
 
-### Graphical Programming 🖵
+### 🖵 Graphical Programming
 Here are some tutorials on how to make visual programs, either using a proper window (SFML), or making pretty graphics in the terminal using ncurses.
 - [Graphical Programming 1 - SFML](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/graphical_programming/01_sfml)
 - [Graphical Programming 2 - NCurses](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/graphical_programming/02_ncurses)
 
-### Theory 📖
+### 📖 Theory
 Sometimes we need some theoretical understanding of the concepts we are trying to learn, and here are some more theoretical/less hands-on discussions.
 - [Cloud Computing](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/theory/cloud_computing)
 - [Hardware](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/team_selection/202303_hardware)
 - [Modules and Containerisation](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/team_selection/202306_containersAndModules)
 
-### General/Performance 🏃
+### 🏃 General/Performance 
 And here are some general or performance-oriented resources.
 - [Intro To Python](https://github.com/Michael-Beukman/HPC-InterestGroup/blob/main/programming/python/intro/PythonIntro.ipynb)
 - [Optimising Python Code](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/performance/optimising_python)
