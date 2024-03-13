@@ -9,6 +9,7 @@
     - [Redirecting to files](#redirecting-to-files)
 - [Editing](#editing)
 - [Environment Variables](#environment-variables)
+    - [Beware](#beware)
 - [Directories and Permissions](#directories-and-permissions)
 - [Searching](#searching)
 - [Transformation](#transformation)
@@ -434,12 +435,12 @@ Here are some very useful sources, and I'd suggest having a look at them for mor
 
 # Examples and Exercises
 
-There are some examples and a basic file structure in the git repo [here](https://github.com/Michael-Beukman/HPC-InterestGroup).
+There are some examples and a basic file structure in the git repo [here](https://github.com/WitsHPC/HPC-InterestGroup/).
 
 You can do the following to get started
 
 ```bash
-git clone https://github.com/Michael-Beukman/HPC-InterestGroup
+git clone https://github.com/WitsHPC/HPC-InterestGroup
 cd HPC-InterestGroup/shell
 ```
 

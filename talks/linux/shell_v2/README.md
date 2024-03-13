@@ -1,6 +1,6 @@
 # Shell V2 & Bash Programming
 
-- [Shell V2 & Bash Programming](#shell-v2--bash-programming)
+- [Shell V2 \& Bash Programming](#shell-v2--bash-programming)
 - [Intro](#intro)
 - [All of the things](#all-of-the-things)
   - [SSH Configs](#ssh-configs)
@@ -18,7 +18,7 @@
 - [Sources](#sources)
 # Intro
 
-This is somewhat of a sequel to the first [Shell Talk](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/shell), that won't necessarily cover individual commands but rather some more holistic components, in particular we will cover some bash programming concepts at the end that could be very useful.
+This is somewhat of a sequel to the first [Shell Talk](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/linux/shell), that won't necessarily cover individual commands but rather some more holistic components, in particular we will cover some bash programming concepts at the end that could be very useful.
 
 # All of the things
 
@@ -47,7 +47,7 @@ Be sure to combine this with SSH Keys, so you can ssh without having to type you
 
 ## Tmux
 
-The notes from the previous Shell talk can be found [here](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/shell#tmux), this will just be a simple demo.
+The notes from the previous Shell talk can be found [here](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/linux/shell#tmux), this will just be a simple demo.
 
 # Bash
 
@@ -196,7 +196,7 @@ echo "DONE"
 
 # Summary
 
-Here we covered some bash scripting concepts, and introduced some other useful things like tmux and ssh configs. The scripts and notes will be uploaded to: [https://github.com/Michael-Beukman/HPC-InterestGroup/](https://github.com/Michael-Beukman/HPC-InterestGroup/)
+Here we covered some bash scripting concepts, and introduced some other useful things like tmux and ssh configs. The scripts and notes will be uploaded to: [https://github.com/WitsHPC/HPC-InterestGroup/](https://github.com/WitsHPC/HPC-InterestGroup/)
 
 # Sources
 

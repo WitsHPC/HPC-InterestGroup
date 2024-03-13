@@ -23,13 +23,13 @@ Last week we covered some of the basics of OpenMP, and today we'll be going over
 
 At the end of the talk we'll be briefly going over vectorised instructions.
 
-Notes and code can be found [here](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/parallel_programming/02_omp_vectorised).
+Notes and code can be found [here](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/programming/parallel_programming/02_omp_vectorised).
 
 # Quick Recap
 
 For a quick recap, OpenMP is a shared memory, single node parallel programming environment.
 
-Please see [here](https://github.com/Michael-Beukman/HPC-InterestGroup/blob/main/parallel_programming/01_omp/README.md) for more details.
+Please see [here](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/programming/parallel_programming/01_omp) for more details.
 
 - Shared memory → Threads can access the same memory locations, and thus influence some shared variables. Each thread can also have private data that only it can access.
 - Single Node → Runs on multiple cores on one machine.

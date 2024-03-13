@@ -8,21 +8,21 @@
 - [Learning](#learning)
 - [How](#how)
 - [OpenMP](#openmp)
-	- [Compiling OpenMP programs.](#compiling-openmp-programs)
-	- [Directives.](#directives)
-	- [Parallel Region](#parallel-region)
-	- [How many threads?](#how-many-threads)
-	- [OMP Functions](#omp-functions)
-	- [Simple, non trivial example.](#simple-non-trivial-example)
-	- [Race conditions](#race-conditions)
-	- [Data scope](#data-scope)
-	- [Parallel For](#parallel-for)
-	- [Putting everything together.](#putting-everything-together)
+		- [Compiling OpenMP programs.](#compiling-openmp-programs)
+		- [Directives.](#directives)
+		- [Parallel Region](#parallel-region)
+		- [How many threads?](#how-many-threads)
+		- [OMP Functions](#omp-functions)
+		- [Simple, non trivial example.](#simple-non-trivial-example)
+		- [Race conditions](#race-conditions)
+		- [Data scope](#data-scope)
+		- [Parallel For](#parallel-for)
+		- [Putting everything together.](#putting-everything-together)
 - [Exercises](#exercises)
 - [Sources](#sources)
 # Get Started
 
-You can visit [https://github.com/Michael-Beukman/HPC-InterestGroup](https://github.com/Michael-Beukman/HPC-InterestGroup), specifically [https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/parallel_programming/01_omp](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/parallel_programming/01_omp) for the notes and code.
+You can visit [https://github.com/WitsHPC/HPC-InterestGroup](https://github.com/WitsHPC/HPC-InterestGroup), specifically [https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/programming/parallel_programming/01_omp](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/programming/parallel_programming/01_omp) for the notes and code.
 
 ## Compiling and Running
 

@@ -9,7 +9,7 @@
 ---
 
 ## Recap
-+ Quick recap of our [previous CUDA talk](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/parallel_programming/04_cuda)
++ Quick recap of our [previous CUDA talk](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/programming/parallel_programming/04_cuda)
 	+ CPUs rely on a few strong cores to do work
 	+ GPUS rely on lots of weak cores to do work.
 	+ Hence, not all tasks are amenable to GPUs, although many are.

@@ -8,7 +8,7 @@ Before you begin, ensure that you have the following prerequisites set up on you
 - Linux operating system (recommended: Ubuntu)
 - Git installed
 - Development tools and libraries (build-essential, libncurses-dev)
-  - *Lab machines should have this. If not, install from source*. [Here](https://github.com/mirror/ncurses/blob/master/INSTALL) and [here](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/team_selection/202304_compiling/ncurses.md) are instructions for ncurses.
+  - *Lab machines should have this. If not, install from source*. [Here](https://github.com/mirror/ncurses/blob/master/INSTALL) and [here](https://github.com/WitsHPC/HPC-InterestGroup/blob/main/tutorials/202304_compiling/ncurses.md) are instructions for ncurses.
 
 ## Instructions
 Follow the steps below to compile btop from source on your machine:

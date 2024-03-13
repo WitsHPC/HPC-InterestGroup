@@ -66,7 +66,7 @@ bash Miniconda3-latest-Linux-x86_64.sh
 
 Then, you should be able to use `conda` normally, e.g. `conda create`, `conda activate`, `conda install` etc.
 
-For other pieces of software (e.g. for more traditional HPC research), you can try and [compile it from source](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/compiling_from_source), or checking if it already exists (e.g. via a `module`).
+For other pieces of software (e.g. for more traditional HPC research), you can try and [compile it from source](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/benchmarks/compiling_from_source), or checking if it already exists (e.g. via a `module`).
 
 ## Workflow
 It is generally easier to do the bulk of one's development locally, and then only move the code to a cluster once it is mature, and you are ready to run experiments. This is not always possible though; for instance, if your code uses private data only accessible from the cluster, or if your local machine is not powerful enough to develop on.
@@ -98,7 +98,7 @@ Generally, for projects that are reasonably-sized (for instance, preliminary exp
 
 For Python, I prefer having `.py` files with all of my code, and running them directly using `python`.
 ### Git
-Git is a very helpful tool, see [here](https://github.com/Michael-Beukman/HPC-InterestGroup/blob/main/git/tutorial.md) for more. A quick TL; DR:
+Git is a very helpful tool, see [here](https://github.com/WitsHPC/HPC-InterestGroup/blob/main/talks/linux/git/tutorial.md) for more. A quick TL; DR:
 - Git allows you to store all of your files, and exactly keep track of different versions of a particular file.
 - Using Github, you can sync your git repositories to the cloud, allowing easy access from multiple locations (e.g. on a cluster and locally) or to multiple people (e.g. everyone working on the same project).
 
@@ -290,7 +290,7 @@ The following commands are useful:
 Generally, if you run something like `python` and the error is `command not found`, then you could check if a module called `python` (or a versioned one, e.g. `python/3.11`) exists, and then load it.
 ### tmux
 `tmux` is similar to `screen`, and is a way to run long commands over ssh without fearing that your connection will drop and kill the job.
-See [here](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/shell#tmux) for more details, and [here](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/) is a great beginner tutorial.
+See [here](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/linux/shell#tmux) for more details, and [here](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/) is a great beginner tutorial.
 
 Generally, the workflow is:
 ```bash
@@ -341,7 +341,7 @@ rsync -r <username>@XX.XX.XX.XX:~/my_code_directory/results .
 ```
 ### vim
 
-Vim is a way to edit files on a terminal, and can be very powerful when you are used to it. See [here](https://github.com/Michael-Beukman/HPC-InterestGroup/blob/main/linux/vim/README.md) for more. Or, run `vimtutor` in your terminal to learn more in an interactive and fun way!
+Vim is a way to edit files on a terminal, and can be very powerful when you are used to it. See [here](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/linux/vim) for more. Or, run `vimtutor` in your terminal to learn more in an interactive and fun way!
 
 The TL; DR is that you if you press escape, you can type `:` and different letters to do different things. `:w` (and enter) saves the file, `:q` exits vim (`:wq` saves and exits whereas `:q!` exits without saving).
 
@@ -388,6 +388,6 @@ As an alternative to `--help`, you can run `man <command>` (where `man` is short
 
 
 ## What Now?
-To go further, consider reading the documentation of the particular program/cluster management system you use. It also helps to become familiar with the linux terminal/bash shell; [here](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/shell) is a guide with exercises at the end. [Here](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/programming/python/intro/PythonIntro.ipynb) is a beginner's intro to Python.
+To go further, consider reading the documentation of the particular program/cluster management system you use. It also helps to become familiar with the linux terminal/bash shell; [here](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/linux/shell) is a guide with exercises at the end. [Here](https://github.com/WitsHPC/HPC-InterestGroup/blob/main/talks/programming/python/intro/PythonIntro.ipynb) is a beginner's intro to Python.
 
 Otherwise, the best way to improve is to practice and to get more experience.

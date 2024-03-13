@@ -445,7 +445,7 @@ make install
 
 So, makefiles are quite useful, and I hope you understand a bit more about how they work now.
 
-The above examples (with code) can be found in: [https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/makefiles](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/makefiles)
+The above examples (with code) can be found in: [https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/benchmarks/makefiles](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/benchmarks/makefiles)
 
 For more information have a look at these sources. Many of these examples and ideas came from the first one, and that book is great to read about anything HPC related.
 

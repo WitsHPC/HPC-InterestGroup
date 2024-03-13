@@ -126,4 +126,4 @@ extern float dot_product(int length, float* a, float* b, float* ans){
 - https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html
 - https://realpython.com/python-bindings-overview/
 - https://www.codeproject.com/Articles/874396/Crunching-Numbers-with-AVX-and-AVX
-- https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/parallel_programming/02_omp_vectorised
+- https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/programming/parallel_programming/02_omp_vectorised

@@ -1,6 +1,6 @@
 # General Optimisation
 
-This talk will cover the [competition](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/competitions/2023_cuda/problem) we ran in August 2023.
+This talk will cover the [competition](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/assorted/competitions/2023_cuda/problem) we ran in August 2023.
 
 ## First Attempt -- Serial C++ Code
 First, we have some simple, C++ code that works.

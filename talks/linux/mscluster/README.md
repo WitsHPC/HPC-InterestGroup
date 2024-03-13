@@ -230,7 +230,7 @@ bash Anaconda3-2022.05-Linux-x86_64.sh
 
 Then, you should be able to use `conda` normally, e.g. `conda create`, `conda activate`, `conda install` etc.
 
-For other pieces of software (e.g. for more traditional HPC research), you can try and [compile it from source](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/compiling_from_source).
+For other pieces of software (e.g. for more traditional HPC research), you can try and [compile it from source](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/benchmarks/compiling_from_source).
 
 ## Pitfalls
 
@@ -309,7 +309,7 @@ The way to do this is to hold the control key, press the b key, and then let go 
 - Communicating between nodes is quite slow, so multinode tasks are not encouraged.
 ## Linux Shell
 Since the cluster has a linux-based terminal interface, it is useful to learn about the linux shell.
-There are a few resources [here](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/shell), [here](https://bootlin.com/doc/legacy/command-line/unix_linux_introduction.pdf) and [here](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Introduction).
+There are a few resources [here](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/linux/shell), [here](https://bootlin.com/doc/legacy/command-line/unix_linux_introduction.pdf) and [here](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Introduction).
 
 # Final Notes
 

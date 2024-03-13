@@ -174,4 +174,4 @@ If you are using `C/C++`, then [MPI](https://www.open-mpi.org/) and [OpenMP](htt
 + Communicating processes adds in some complications.
 
 
-&shy;<!-- .element: class="fragment" --> See code at https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/parallel_programming/03_python
+&shy;<!-- .element: class="fragment" --> See code at https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/programming/parallel_programming/03_python

@@ -28,7 +28,7 @@ This error often happens if you open a new terminal and try to run `cd -`. There
 ## popd error: directory stack is empty.
 This error happens because the `popd` command pops from the directory stack (i.e. the directories you have visited). This is generally finite, so running `popd` enough times will result in the stack being empty and this error happening.
 ## 2> vs 2>>
-The general difference between these is that `2>test.txt` overwrites `test.txt` with the standard error of the command while `2>>test.txt` appends to `test.txt` and does not overwrite what is already there. See [here](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/shell#redirecting-to-files) for more.
+The general difference between these is that `2>test.txt` overwrites `test.txt` with the standard error of the command while `2>>test.txt` appends to `test.txt` and does not overwrite what is already there. See [here](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/linux/shell#redirecting-to-files) for more.
 ## Example of yes
 The `yes` command is quite useful, as it allows you to pass input to another program without you typing anything. One use-case of this is when installing programs, or using commands that need input from the user. For instance, `sudo apt-get install vim` asks you for input before it completes. If you are running a script automatically, this will cause problems. In this case, something like `yes | sudo apt-get install vim` will automatically install it, as `yes` inputs `y` to the `apt-get` command.
 ## AWK: processing is record and fields oriented
@@ -46,6 +46,6 @@ Each of these numbers can be represented as a binary number of three digits, `rw
 
 And so on.
 
-See [here](https://github.com/Michael-Beukman/HPC-InterestGroup/tree/main/shell) for more.
+See [here](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/linux/shell) for more.
 ## Change Sort Order in Top
 While running `top`, you can press several keys to change the sort order. For instance, while in the `top` screen, pressing `M` sorts the processes according to their memory usage.
