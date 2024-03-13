@@ -1,9 +1,9 @@
 # High Performance Computing Interest Group  - University of the Witwatersrand
 
 <p float="left" align="middle">
-  <img src="./images/matrix.gif" height="150" />
-  <img src="./images/gif1.gif"   height="150" /> 
-  <img src="./images/cuda.png"   height="150" />
+  <img src="./assorted/images/matrix.gif" height="150" />
+  <img src="./assorted/images/gif1.gif"   height="150" /> 
+  <img src="./assorted/images/cuda.png"   height="150" />
 </p>
 
 This is a repo that contains notes and code for the HPC interest group at the University of the Witwatersrand.
