@@ -10,7 +10,7 @@ mkdir temp-hpc
 ```
 
 2. **Extract Files:**
-   - Extract the contents of the `temp_contents.tar.gz` archive (downloaded from moodle) into the `temp-hpc` directory. Run the following command:
+   - Extract the contents of the `temp_contents.tar.gz` archive (download from moodle) into the `temp-hpc` directory. Run the following command:
 
 ```bash
 tar -xzvf extra-tut-shell.tar.gz -C ~/temp-hpc/
