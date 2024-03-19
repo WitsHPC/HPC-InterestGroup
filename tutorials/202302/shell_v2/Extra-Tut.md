@@ -1,6 +1,6 @@
 # Extra Tut Steps
 
-Below are the steps to complete the Temp-HPC project:
+Below are the steps to complete the Extra Tutorial.
 
 1. **Create a Directory:**
    - Run the following command in your terminal to create a directory named `temp-hpc`:
