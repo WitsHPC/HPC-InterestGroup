@@ -81,4 +81,4 @@ fi
 ```bash
 bash ./run.sh
 ```
-- YOu may have to use ```chmod +x``` to change the file permissions.
+- You may have to use ```chmod +x``` to change the file permissions.
