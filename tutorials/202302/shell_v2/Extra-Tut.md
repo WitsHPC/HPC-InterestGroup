@@ -32,7 +32,7 @@ grep -r "ERROR"
 ```
 
 5. **Find the Number:**
-   - After running the previous command, you'll find an error that does not look like the others. Make a note of this number. **XXXX XX XXX XXXX XX XXXXX**
+   - After running the previous command, you'll find an error that does not look like the others. Make a note of this code. **XXXX XX XXX XXXX XX XXXXX**
 
 6. **Update the Message:**
    - Change your directory to `src`:
@@ -48,7 +48,7 @@ cd ../src
    - Create a run script named `run.sh` with the following content:
 
 ```
-vim run.md
+vim run.sh
 ```
 
 (remember to use **insert** and **esc + :wq** - press them as buttons, do not hold down) 
@@ -80,3 +80,5 @@ fi
 
 ```bash
 bash ./run.sh
+```
+- YOu may have to use ```chmod +x``` to change the file permissions.
