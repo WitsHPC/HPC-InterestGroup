@@ -41,7 +41,7 @@ grep -r "ERROR"
 cd ../src
 ```
 
-   - Open the `message.txt` file and put the number you found in step 5 into it.
+   - Open the `message.txt` file and put the code you found in step 5 into it.
 
 
 7. **Create the Run Script:**
