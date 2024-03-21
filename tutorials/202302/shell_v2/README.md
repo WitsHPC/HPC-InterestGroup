@@ -146,3 +146,15 @@ Some other useful patterns:
 
 - `^` matches the beginning of a line, so `grep '^Hello' file` will return all lines that begin with 'Hello'
 - `$` matches the end of a line
+
+## Scripts
+
+To streamline your workflow, we generally use scripts.
+
+To make a script, your file needs to have `.sh` at the end.
+
+Inside your file, the following line must be present: `#!/bin/bash`
+
+To run a script, you need to give the file permissions: `chmod +x your_file_name.sh`
+
+Finally, to run the script: `./your_file_name.sh`
