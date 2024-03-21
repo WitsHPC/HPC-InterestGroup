@@ -20,6 +20,7 @@
   - [Tmux](#tmux)
   - [Etiquette](#etiquette)
   - [Linux Shell](#linux-shell)
+  - [Parallelisation](#parallelisation)
 - [Final Notes](#final-notes)
 - [Errors](#errors)
   - [Cuda - No kernel image is available for execution on the device](#cuda---no-kernel-image-is-available-for-execution-on-the-device)
@@ -310,6 +311,33 @@ The way to do this is to hold the control key, press the b key, and then let go 
 ## Linux Shell
 Since the cluster has a linux-based terminal interface, it is useful to learn about the linux shell.
 There are a few resources [here](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/talks/linux/shell), [here](https://bootlin.com/doc/legacy/command-line/unix_linux_introduction.pdf) and [here](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Introduction).
+
+## Parallelisation
+If your code uses only a single core, or a small amount of the GPU, and you want to run multiple jobs in parallel, it is inefficient to have one slurm job per task. This is because each node has many cores (14 or 16+). Therefore, if your jobs only use one core, then you can run 14 tasks in parallel on a single node without losing much performance.
+
+An example of this is the following job script. 
+
+The important part of this is that we run multiple scripts, and we separate them with the `&` character at the end of each line. This means "run in background". 
+**It is very important to have the `wait` there too**. It means that the script will wait for all jobs to finish before terminating. If you omit this, your slurm script will finish immediately, with all of your jobs still running on the machine! This is bad form and will negatively impact others.
+
+```bash
+#!/bin/bash
+#SBATCH --job-name=test
+#SBATCH --output=/home-mscluster/YOURUSERNAMEHERE/result.txt
+#SBATCH --ntasks=1
+# increase the time here if you need more than 10 minutes to run your job.
+#SBATCH --time=10:00
+#SBATCH --partition=batch
+
+python /path/to/file1.py &
+python /path/to/file2.py &
+python /path/to/file3.py &
+python /path/to/file4.py &
+python /path/to/file5.py &
+python /path/to/file6.py &
+
+wait;
+```
 
 # Final Notes
 
