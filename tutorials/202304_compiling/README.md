@@ -38,7 +38,7 @@ Follow the steps below to compile btop from source on your machine:
    vim ~/.bashrc --> then add the export inside --> then source your bashrc file
    ```
    ```
-   export $PATH=$PATH:/your/install/directory/choice/here
+   export PATH=$PATH:/your/install/directory/choice/here
    ```
 
 6. **Verify installation:** Verify that btop has been installed correctly by running the command:
