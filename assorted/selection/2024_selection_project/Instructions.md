@@ -4,7 +4,7 @@ Over the last few weeks, we have taught you the basics of HPC. We now want you t
 
 # Bitonic Sort
 
-The bitonic sort algorithm is based on the concept of a sorting network. It efficiently sorts a given list or array of elements in ascending or descending order. The source code can be found at: <wits github>. Credits to Sayfullah Jumoorty and Muhammed Muaaz Dawood.
+The bitonic sort algorithm is based on the concept of a sorting network. It efficiently sorts a given list or array of elements in ascending or descending order. The source code can be found [here](https://github.com/WitsHPC/HPC-InterestGroup/blob/eaeffb8e3feae6082aae674b1c271eea4415fe65/assorted/selection/2024_selection_project/bitonic_sort/README.md). Credits to Sayfullah Jumoorty and Muhammed Muaaz Dawood.
 
 ### Compiling bitonic_sort
 
