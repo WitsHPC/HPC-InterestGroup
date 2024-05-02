@@ -4,48 +4,7 @@ Over the last few weeks, we have taught you the basics of HPC. We now want you t
 
 # Bitonic Sort
 
-The bitonic sort algorithm is based on the concept of a sorting network. It efficiently sorts a given list or array of elements in ascending or descending order. The source code can be found [here](https://github.com/WitsHPC/HPC-InterestGroup/blob/eaeffb8e3feae6082aae674b1c271eea4415fe65/assorted/selection/2024_selection_project/bitonic_sort/README.md). Credits to Sayfullah Jumoorty and Muhammed Muaaz Dawood.
-
-### Compiling bitonic_sort
-
-```
-cd bitonic_sort/src
-```
-
-You can make changes to the Makefile:
-
-```
-OMPFLAG = 
-CC = g++
-MPI_CC = 
-CFLAGS =
-```
-
-Create your executable:
-
-```
-make
-```
-
-There should be a bitonic executable in your directory.
-
-### Running bitonic_sort
-
-You first need to generate your inputs. Do not change the n value in gen.sh.
-
-```
-cd bitonic_sort/gen
-
-bash gen.sh
-```
-
-Now you can run your program:
-
-```
-cd bitonic_sort/src
-	
-./bitonic #or mpirun ./bitonic
-```
+The bitonic sort algorithm is based on the concept of a sorting network. It efficiently sorts a given list or array of elements in ascending or descending order. The source code and instructions for building and runnung can be found [here](https://github.com/WitsHPC/HPC-InterestGroup/tree/main/assorted/selection/2024_selection_project/bitonic_sort). Credits to Sayfullah Jumoorty and Muhammed Muaaz Dawood.
 
 # 3-node OpenHPC cluster
 
