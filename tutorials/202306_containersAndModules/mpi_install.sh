@@ -44,6 +44,7 @@ fi
 
 # Get the installation directory from the user
 read -p "Enter the installation directory: " INSTALL_DIR
+cd $INSTALL_DIR
 
 # Download and extract OpenMPI
 wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.1.tar.gz
