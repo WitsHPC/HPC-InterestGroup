@@ -1,6 +1,7 @@
 # Wits HPC Selection Project Overview
 
 Over the last few weeks, we have taught you the basics of HPC. We now want you to put your knowledge to the test by running a compute-intensive task, Bitonic Sort, across a 3-node virtual cluster using OpenHPC.
+
 FYI: To be eligible for selection you need to be an SA Citizen and an undergrad in 2025, however that being said, anyone can partake in the project.
 
 ### Bitonic Sort
