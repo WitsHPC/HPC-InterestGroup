@@ -43,6 +43,8 @@ fi
 
 
 # Get the installation directory from the user
+echo "The install directory must be an absolute path eg. /home/<username>/libraries/mpi"
+echo " " 
 read -p "Enter the installation directory: " INSTALL_DIR
 cd $INSTALL_DIR
 
