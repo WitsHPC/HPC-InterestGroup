@@ -1,6 +1,69 @@
 # htop install script
 
-Add the shebang
+## Setting up the environment
+
+Let's first set up the environment to use lmod.
+
+Copy the following to a file called `docker_install.sh`:
+```bash
+#!/bin/env bash
+if ! command -v curl &> /dev/null
+then
+    echo "curl is not installed. Installing now..."
+    temp_dir=$(mktemp -d)
+    cd "$temp_dir"
+    wget https://curl.se/download/curl-7.80.0.tar.gz
+    tar xzf curl-7.80.0.tar.gz
+    cd curl-7.80.0
+    ./configure --prefix="$HOME/.local"
+    make
+    make install
+    echo "export PATH=\"\$HOME/.local/bin:\$PATH\"" >> ~/.bashrc
+    source ~/.bashrc
+else
+    echo "curl is already installed."
+fi
+if ! command -v docker &> /dev/null
+then
+    echo "Docker is not installed. Installing now..."
+    curl -fsSL https://get.docker.com/rootless | sh
+    echo "Docker installed"
+    dir_to_add="/home/$USER/bin"
+    echo "export PATH=\"\$PATH:$dir_to_add\"" >> ~/.bashrc
+    source ~/.bashrc
+else
+    echo "Docker is already installed."
+fi
+```
+Run the script:
+```bash
+bash ./docker_install.sh
+```
+
+Open and close the terminal and then run the following to see if docker has been installed correctly:
+```bash
+docker run hello-world
+```
+
+Now let's create an Unbuntu docker container using:
+```bash
+docker run -it ubuntu:latest bash
+```
+
+Then install all the necessary dependencies inside the docker container:
+```bash
+apt update && apt install -y lmod vim wget autotools-dev build-essential autoconf automake libncursesw5-dev
+```
+Export the file paths and test if lmod works:
+```bash
+echo "source /etc/profile.d/lmod.sh" >> ~/.bashrc
+source ~/.bashrc
+
+module avail
+```
+## Htop install script
+
+Now that we've set up the environment, let's make a script called `htop_install.sh` and add the shebang first:
 
 ```bash
 #!/bin/bash
