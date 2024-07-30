@@ -2,7 +2,7 @@
 
 ## Setting up the environment
 
-Let's first set up the environment to use lmod.
+If you are not using a personal computer, you need to first set up an environment to use lmod. We will be using Docker.
 
 Copy the following to a file called `docker_install.sh`:
 ```bash
