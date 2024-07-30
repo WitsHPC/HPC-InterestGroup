@@ -20,7 +20,7 @@ trap 'echo "Script interrupted" 1>&2; exit 2' INT TERM
 Check if Install directory exists:
 
 ```bash
-INSTALL_DIR="/home/lilyd/htop"
+INSTALL_DIR="/home/$USER/htop"
 
 echo "Setting up the installation directory at $INSTALL_DIR"
 
