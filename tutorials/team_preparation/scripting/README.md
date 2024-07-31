@@ -2,11 +2,11 @@
 > Lily de Melo
 > 
 
-Scripting is where we put all our shell commands into a .sh file to helps us automate our workflows.
+Scripting is where we put all our shell commands into a .sh file to help us automate our workflows.
 
 # Good practices when scripting: 
 
-- Check if files or directories exists before downloading or `cd`’ing into them:
+- Check if files or directories exist before downloading or `cd`’ing into them:
 
 	```bash
 	if [ -f "file_name" ]; then
@@ -17,7 +17,7 @@ Scripting is where we put all our shell commands into a .sh file to helps us aut
 	```
 	
 	```bash
-	mkdir -p your/diretory
+	mkdir -p your/directory
 	
 	or
 	
@@ -179,7 +179,7 @@ Scripting is where we put all our shell commands into a .sh file to helps us aut
 
 - Your work remains consistent. Each time you run an app, the process will be the same, so you don't need to remember all the steps. This consistency makes debugging quicker since you know exactly what you've done.
 
-- You can replicate work across different systems. A script you create on your laptop can be used on a cluster if made correctly.
+- You can replicate work across different systems. If made correctly, a script you create on your laptop can be used on a cluster.
 
 - Automating workflows saves time. For instance, you can have a script for installing btop or Intel tools. This will save you time in the future by avoiding repetitive manual steps.
 
@@ -189,21 +189,21 @@ Make a script to download and install btop. Add all the bells and whistles of pa
 
 Here are the basic steps for installing btop:
 
-```
+```bash
 git clone --recursive https://github.com/aristocratos/btop.git
 ```
-```
+```bash
 cd btop
 ```
 
-```jsx
-mak
+```bash
+make
 ```
 
-```jsx
+```bash
 make install PREFIX=/your/path
 ```
 
-```jsx
+```bash
 export PATH=$PATH:/your/path
 ```
