@@ -1,4 +1,5 @@
 # What is MPI?
+>Lily de Melo
 
 Message Passing Interface is a standardized message-passing system designed to facilitate communication between processes in parallel computing environments.
 
