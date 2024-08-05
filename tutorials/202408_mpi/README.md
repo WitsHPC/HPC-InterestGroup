@@ -87,6 +87,11 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 ```
+Run the following if its not allowing you to run as root:
+```bash
+export OMPI_ALLOW_RUN_AS_ROOT=1
+export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
+```
 
 # Tutorial
 
