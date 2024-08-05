@@ -99,7 +99,6 @@ Download repo and unzip it:
 if [ -f "$INSTALL_DIR/htop-3.3.0.tar.xz" ]; then
     echo "htop source repo already exists, skipping downloading"
 else
-    # Print out what the script is doing
     echo "Cloning htop repository"
     wget https://github.com/htop-dev/htop/releases/download/3.3.0/htop-3.3.0.tar.xz
 fi
@@ -123,13 +122,11 @@ cd $INSTALL_DIR/htop-3.3.0
 ./configure --prefix=$INSTALL_DIR
 make
 
-# Print out what the script is doing
 echo "Installing htop"
 
 # Install htop
 make install
 
-# Print out the completion message
 echo "htop has been installed successfully to $INSTALL_DIR"
 ```
 
