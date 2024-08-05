@@ -1,5 +1,7 @@
 # Comparing Ranks vs. Threads using LAMMPS
 
+>Lily de Melo
+
 We need to set up our environment the same way we did last week. Create a file called docker_install.sh and copy and paste the following into it. 
 
 ```bash
