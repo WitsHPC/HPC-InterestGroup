@@ -44,7 +44,7 @@ Run it:
 bash lammps_install.sh
 ```
 
-Now copy the contents of the following into a file called `run_lammps.sh`. Take a little time understand what is happening in this file; ask a mentor to clarify if unsure:
+Now copy the contents of the following into a file called `run_lammps.sh`. Take some time to understand how the `mpirun` command works:
 
 ```bash
 #!/bin/bash
@@ -52,10 +52,6 @@ Now copy the contents of the following into a file called `run_lammps.sh`. Take 
 INSTALL_DIR=$HOME
 
 cd "$INSTALL_DIR/lammps/bench/"
-
-#some commands needed in docker to run mpi programs as root
-export OMPI_ALLOW_RUN_AS_ROOT=1
-export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
 
 mpirun -np $1 ./lmp_omp -sf omp -pk omp $2 -in in.rhodo > lmp_serial_rhodo.out
 cat lmp_serial_rhodo.out
