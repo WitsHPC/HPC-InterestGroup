@@ -41,7 +41,7 @@ cp lmp_omp "$INSTALL_DIR/lammps/bench/"
 Run it:
 
 ```bash
-bash lammps_install.sh
+bash install_lammps.sh
 ```
 
 Now copy the contents of the following into a file called `run_lammps.sh`. Take some time to understand how the `mpirun` command works:
@@ -70,8 +70,8 @@ cat lmp_serial_rhodo.out
 Run it:
 
 ```bash
-bash lammps_run.sh <number of processors> <number of threads>
+bash run_lammps.sh <number of processors> <number of threads>
 
 #example
-bash lammps_run.sh 8 1
+bash run_lammps.sh 8 1
 ```
