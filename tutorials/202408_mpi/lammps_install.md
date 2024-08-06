@@ -2,64 +2,14 @@
 
 >Lily de Melo
 
-We need to set up our environment the same way we did last week. Create a file called docker_install.sh and copy and paste the following into it. 
-
+We need to set up our environment to use the mpich installed on the lab computers. We simpily need to export the following paths:
 ```bash
-#!/bin/env bash
-if ! command -v curl &> /dev/null
-then
-    echo "curl is not installed. Installing now..."
-    temp_dir=$(mktemp -d)
-    cd "$temp_dir"
-    wget https://curl.se/download/curl-7.80.0.tar.gz
-    tar xzf curl-7.80.0.tar.gz
-    cd curl-7.80.0
-    ./configure --prefix="$HOME/.local"
-    make
-    make install
-    echo "export PATH=\"\$HOME/.local/bin:\$PATH\"" >> ~/.bashrc
-    source ~/.bashrc
-else
-    echo "curl is already installed."
-fi
-if ! command -v docker &> /dev/null
-then
-    echo "Docker is not installed. Installing now..."
-    curl -fsSL https://get.docker.com/rootless | sh
-    echo "Docker installed"
-    dir_to_add="/home/$USER/bin"
-    echo "export PATH=\"\$PATH:$dir_to_add\"" >> ~/.bashrc
-    source ~/.bashrc
-else
-    echo "Docker is already installed."
-fi
+export PATH=/usr/local/mpich-4.1.1/bin:$PATH
+export CPATH=/usr/local/mpich-4.1.1/include:$CPATH
 ```
 
-Run it:
 
-```bash
-bash ./docker_install.sh
-```
-
-Test it:
-
-```bash
-docker run hello-world
-```
-
-Repeat this step from last week:
-
-```Bash
-docker run -it ubuntu:latest bash
-```
-
-We’ll need to install some additional dependencies:
-
-```Bash
-apt update && apt install -y lmod vim wget autotools-dev build-essential autoconf automake libncursesw5-dev cmake git openmpi-bin libopenmpi-dev libfftw3-dev libjpeg-dev libpng-dev libtiff-dev libx11-dev libxext-dev libxrender-dev
-```
-
-Create a file called `install_lammps.sh` and copy the following into it. You don’t need to know how it works for now. We just want to see the result of comparing threads and processes:
+Now create a file called `install_lammps.sh` and copy the following into it. You don’t need to know how it works for now. We just want to see the result of comparing threads and processes:
 
 ```Bash
 #!/bin/bash
@@ -107,7 +57,7 @@ cd "$INSTALL_DIR/lammps/bench/"
 export OMPI_ALLOW_RUN_AS_ROOT=1
 export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
 
-mpirun -np $1 lmp_omp -sf omp -pk omp $2 -in in.rhodo > lmp_serial_rhodo.out
+mpirun -np $1 ./lmp_omp -sf omp -pk omp $2 -in in.rhodo > lmp_serial_rhodo.out
 cat lmp_serial_rhodo.out
 ```
 
