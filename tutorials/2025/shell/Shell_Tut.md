@@ -72,3 +72,14 @@ Charlotte binge-watched all of Peppa Pig in 3 days. She ended up getting a D for
 Charlotte asks you if you can change it to an A. You changed it to an F- instead, as she did not pay you.
 
 What command did you use?
+
+---
+
+*Question 13:*
+Find the HPC-InterestGroup GitHub you've downloaded.
+
+```
+cd HPC-InterestGroup/talks/linux/shell/results
+```
+
+Find all the `.csv` files in the results directory
