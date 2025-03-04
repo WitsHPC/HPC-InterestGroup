@@ -82,4 +82,4 @@ Find the HPC-InterestGroup GitHub you've downloaded.
 cd HPC-InterestGroup/talks/linux/shell/results
 ```
 
-Find all the `.csv` files in the results directory
+Find all the `.csv` files in the `results` directory
