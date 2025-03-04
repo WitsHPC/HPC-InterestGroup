@@ -17,7 +17,7 @@ Abigail,20,A
 Daniel,21,B
 Evelyn,22,A
 Benjamin,19,C
-Charlotte,23,A
+Charlotte,30, F
 Aiden,20,B
 Chloe,21,A
 Henry,22,C
@@ -29,7 +29,7 @@ Mila,22,A
 Harper,19,C
 Michael,23,A
 Amelia,20,B
-Daniel,21,A
+Daniel,30,A
 Sophia,22,C
 Olivia,19,A
 Ethan,24,B
