@@ -68,11 +68,6 @@ Follow the instructions in lammps_install.md to see the results of different com
 >**Considerations when running MPI-enabled programs:** Not all applications utilize every core or run optimally on every core. It is important to carefully consider the number of processes(and threads) you choose to use. Be sure to investigate the correlation between your problem size and the number of processes to ensure optimal performance.
 
 # Example  
-Run the following commands to set the environment variables to use mpich:
-```bash
-export PATH=/usr/local/mpich-4.1.1/bin:$PATH
-export CPATH=/usr/local/mpich-4.1.1/include:$CPATH
-```
 Follow the instructions here to run the example: [How to build and run an MPI program](https://github.com/WitsHPC/HPC-InterestGroup/blob/b54e9b4200d57a3ef85e7bc487b5eb9dfdd572f3/tutorials/202305_mpi/README.md)
 ```bash
 #include <iostream>
