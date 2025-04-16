@@ -2,14 +2,7 @@
 
 >Lily de Melo
 
-We need to set up our environment to use the mpich installed on the lab computers. We simpily need to export the following paths:
-```bash
-export PATH=/usr/local/mpich-4.1.1/bin:$PATH
-export CPATH=/usr/local/mpich-4.1.1/include:$CPATH
-```
-
-
-Now create a file called `install_lammps.sh` and copy the following into it. You don’t need to know how it works for now. We just want to see the result of comparing threads and processes:
+Create a file called `install_lammps.sh` and copy the following into it. You don’t need to know how it works for now. We just want to see the result of comparing threads and processes:
 
 ```Bash
 #!/bin/bash
