@@ -37,7 +37,8 @@ In summary, communication is very important as one process may need results or i
 
 >**Side note:** this is an opportunity to combine your software development skills with your knowledge of High-Performance Computing (HPC). Many scientific applications still need to be adapted for MPI or OpenMP. So I want to emphasize the importance of taking your math courses seriously. While you may not always need to master the mathematical concepts, having a solid understanding will be beneficial when it comes time to implement these concepts in practical applications. This is a just a snippet of a paper giving an overview of how an application works:
 >
->![math](https://github.com/froggomelo/test-repo/blob/cc150fe9b357ed73b9f3cda98cbff62a96fd7b93/Untitled.png)  
+> ![math](https://github.com/WitsHPC/HPC-InterestGroup/blob/main/tutorials/202408_mpi/parrallel_paper.png?raw=true)
+
 
 
 # MPI vs OpenMP
