@@ -21,27 +21,27 @@ tar -xf nSnake-master.tar.gz
 
 ## Compile
 
-The `make` executes the contents of a `Makefile`. The `Makefile` is the "how you want to compile file". For more on [Makefiles](https://opensource.com/article/18/8/what-how-makefile).
+The `make` executes the contents of a `Makefile`. The `Makefile` is the "how you want to compile a file". For more on [Makefiles](https://opensource.com/article/18/8/what-how-makefile).
 
 ```bash
 make
 ```
 
-## Run in the file
+## Run (in the folder)
 
 > [!NOTE]
-> The `./` will run a executable "application".
+> The `.` will run an executable "application".
 
 ```bash
 ./bin/nsnake
 ```
 
-## Add to environment to run anywhere (wow)
+## Add to the environment to run anywhere (wow)
 
 So now we can run nSnake; but we cant run it in any folder, we will achieve this by telling our environment where an executable is "the location". We will use the `~/.bashrc` file to achieve this.
 
 > [!NOTE]
-> The `~/.bashrc` file tells the terminal what environment to always set to the terminal. Lik where applications are, commands to run when a new terminal instance is made, etc.
+> The `~/.bashrc` file configures the terminal environment by specifying settings such as the locations of applications and commands to execute whenever a new terminal session is started, etc.
 
 ```bash
 vim ~/.bashrc
@@ -49,11 +49,14 @@ vim ~/.bashrc
 
 Add to the end of the file the following:
 
+> [!IMPORTANT]  
+> Change the `<PATH_TO_FOLDER>` part to the location where you downloaded the source code.
+
 ```bash
 export PATH=$PATH:<PATH_TO_FOLDER>/bin/
 ```
 
-> [!IMPORTANT]  
+> [!TIP]
 > To exit and save vim press `ESC` and then type `:wq` (write & quite) and then click `ENTER` :)
 
 Then to apply the environment script we will use the `source` command:
