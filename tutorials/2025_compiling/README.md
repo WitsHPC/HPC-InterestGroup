@@ -12,7 +12,7 @@ curl -L https://github.com/alexdantas/nSnake/archive/refs/heads/master.tar.gz -o
 
 We will then extract the tarball using the `tar` command.
 
-> ![NOTE]
+> [!NOTE]
 > the `tar` command takes some "flags" (options for a command). The `-xf` is a combination of two flags `-x` which means to "extract" and `-f` which means "file". More on `tar` [flags](https://www.gnu.org/software/tar/manual/html_section/All-Options.html).
 
 ```bash
@@ -29,7 +29,7 @@ make
 
 ## Run in the file
 
-> ![NOTE]
+> [!NOTE]
 > The `./` will run a executable "application".
 
 ```bash
@@ -40,7 +40,7 @@ make
 
 So now we can run nSnake; but we cant run it in any folder, we will achieve this by telling our environment where an executable is "the location". We will use the `~/.bashrc` file to achieve this.
 
-> ![NOTE]
+> [!NOTE]
 > The `~/.bashrc` file tells the terminal what environment to always set to the terminal. Lik where applications are, commands to run when a new terminal instance is made, etc.
 
 ```bash
