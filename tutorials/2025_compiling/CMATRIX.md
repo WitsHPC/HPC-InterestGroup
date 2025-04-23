@@ -10,10 +10,13 @@ This README shows you how to **install cmatrix from source** using `CMake` on a 
 
 Make sure you have the following packages installed:
 
+Note: this step is not required if you are using the MS Lab Computers
+
 ```bash
 sudo apt update
 sudo apt install cmake build-essential libncurses5-dev
 ```
+
 
 ## Build Instructions
 
