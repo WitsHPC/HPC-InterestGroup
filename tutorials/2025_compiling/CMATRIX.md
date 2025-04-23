@@ -40,7 +40,7 @@ cmake ..
 Compile the source:
 
 ```bash
-cmake ..
+make
 ```
 
 ## Run cmatrix
