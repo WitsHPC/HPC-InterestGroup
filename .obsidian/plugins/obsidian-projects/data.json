@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "projects": [],
+  "preferences": {
+    "projectSizeLimit": 1000,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "commands": [],
+    "linkBehavior": "open-note"
+  }
+}

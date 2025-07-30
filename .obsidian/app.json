@@ -1,0 +1,22 @@
+{
+  "useMarkdownLinks": false,
+  "newLinkFormat": "relative",
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "./attachments",
+  "promptDelete": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "2",
+    "downscalePercent": 70
+  },
+  "vimMode": true,
+  "livePreview": true,
+  "showLineNumber": true,
+  "userIgnoreFilters": [
+    "Templates/"
+  ],
+  "readableLineLength": true,
+  "showUnsupportedFiles": true
+}

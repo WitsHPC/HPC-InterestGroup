@@ -1,0 +1,14 @@
+{
+  "accentColor": "#4060d4",
+  "cssTheme": "Minimal",
+  "theme": "obsidian",
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "big-math"
+  ],
+  "nativeMenus": false,
+  "baseFontSizeAction": true,
+  "interfaceFontFamily": "Fira Sans",
+  "textFontFamily": "Fira Sans",
+  "monospaceFontFamily": "Fira Mono"
+}

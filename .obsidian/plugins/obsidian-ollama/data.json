@@ -1,0 +1,101 @@
+{
+  "ollamaUrl": "http://localhost:11434",
+  "commands": [
+    {
+      "name": "Summarize selection",
+      "prompt": "Act as a writer. Summarize the text in a view sentences highlighting the key takeaways. Output only the text and nothing else, do not chat, no preamble, get to the point.",
+      "model": "llama2"
+    },
+    {
+      "name": "Explain selection",
+      "prompt": "Act as a writer. Explain the text in simple and concise terms keeping the same meaning. Output only the text and nothing else, do not chat, no preamble, get to the point.",
+      "model": "llama2"
+    },
+    {
+      "name": "Expand selection",
+      "prompt": "Act as a writer. Expand the text by adding more details while keeping the same meaning. Output only the text and nothing else, do not chat, no preamble, get to the point.",
+      "model": "llama2"
+    },
+    {
+      "name": "Rewrite selection (formal)",
+      "prompt": "Act as a writer. Rewrite the text in a more formal style while keeping the same meaning. Output only the text and nothing else, do not chat, no preamble, get to the point.",
+      "model": "llama2"
+    },
+    {
+      "name": "Rewrite selection (casual)",
+      "prompt": "Act as a writer. Rewrite the text in a more casual style while keeping the same meaning. Output only the text and nothing else, do not chat, no preamble, get to the point.",
+      "model": "llama2"
+    },
+    {
+      "name": "Rewrite selection (active voice)",
+      "prompt": "Act as a writer. Rewrite the text in with an active voice while keeping the same meaning. Output only the text and nothing else, do not chat, no preamble, get to the point.",
+      "model": "llama2"
+    },
+    {
+      "name": "Rewrite selection (bullet points)",
+      "prompt": "Act as a writer. Rewrite the text into bullet points while keeping the same meaning. Output only the text and nothing else, do not chat, no preamble, get to the point.",
+      "model": "llama2"
+    },
+    {
+      "name": "Caption selection",
+      "prompt": "Act as a writer. Create only one single heading for the whole text that is giving a good understanding of what the reader can expect. Output only the caption and nothing else, do not chat, no preamble, get to the point. Your format should be ## Caption.",
+      "model": "llama2"
+    },
+    {
+      "name": "Summarise URL",
+      "prompt": "Summarise the url in the selected obsidian link. Output only the text, no chatting, no preamble, get to the point",
+      "model": "llama2"
+    },
+    {
+      "name": "Autocomplete",
+      "prompt": "Autocomplete the selected text with a short, concise answer to the text. No chatting, no preamble, get to the point",
+      "model": "llama2",
+      "temperature": 0
+    },
+    {
+      "name": "Create links based on selection",
+      "prompt": "Based on the selected text, find web urls related to it, the urls must be accessible as of 2023. No chatting, no preamble, straight to the point",
+      "model": "llama2"
+    },
+    {
+      "name": "Summarise pdf section",
+      "prompt": "Summarise the sections of the pdf in the obsidian link selected. Give 5 or more bullet points for each section. No chatting, no preamble, straight to the point",
+      "model": "llama2"
+    },
+    {
+      "name": "Explain concept - extreme detail",
+      "prompt": "explain the concept with extreme detail, citing sources with urls, provide online resources for better understanding (with urls) provide a list of around 5 related topics I might like to explore. No chat, no preamble, get to the point. ",
+      "model": "mistral-openorca",
+      "temperature": 0.1
+    },
+    {
+      "name": "Explain concept - low detail",
+      "prompt": "Explain in a concise, high level manner, a tldr. No chatting, no preamble, get to the point",
+      "model": "mistral-openorca",
+      "temperature": 0.07
+    },
+    {
+      "name": "Summarise document",
+      "prompt": "Summarise the document in the given link in bullet point form, broken up by section in the document. Each section should have at least 5 points. Add an extra section at the end called 'Key takeaways' and in that, give 3 main takeaway points from the document. No preamble, no chatting, get straight to the point",
+      "model": "mistral-openorca",
+      "temperature": 0.13
+    },
+    {
+      "name": "Highlight similarities",
+      "prompt": "Take into account the documents in the given obsidian links. Create a markdown table with the name of the documents, and at least 5 similiarities of the content of the documents. No metadata about the documents should be used, only the information of the content. No preamble, no chatting, get straight to the point",
+      "model": "mistral-openorca",
+      "temperature": 0.13
+    },
+    {
+      "name": "Highlight differences",
+      "prompt": "Take into account the documents in the given obsidian links. Create a markdown table with the name of the documents, and at least 5 differences of the content of the documents. No metadata about the documents should be used, only the information of the content. No preamble, no chatting, get straight to the point",
+      "model": "mistral-openorca",
+      "temperature": 0.12
+    },
+    {
+      "name": "Summarise book",
+      "prompt": "Summarise the book in the given obsidian link. Give each chapter name as a heading, followed by at least 10 bullet points of the most important information from that chapter. No preamble, no chatting, get straight to the point. Only use information found in the document.",
+      "model": "mistral-openorca"
+    }
+  ]
+}
