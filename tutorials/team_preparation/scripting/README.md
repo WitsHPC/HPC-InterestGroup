@@ -185,25 +185,39 @@ Scripting is where we put all our shell commands into a .sh file to help us auto
 
 # Tutorial
 
-Make a script to download and install btop. Add all the bells and whistles of path checking, exporting etc.
-
-Here are the basic steps for installing btop:
-
+## Tutorial
+Try to make a script to automate the installation of [LAMMPS](https://www.lammps.org/#gsc.tab=0)  
+### Build
 ```bash
-git clone --recursive https://github.com/aristocratos/btop.git
-```
-```bash
-cd btop
+git clone -b stable https://github.com/lammps/lammps.git
 ```
 
 ```bash
-make
+cd lammps/src
 ```
 
 ```bash
-make install PREFIX=/your/path
+make clean-all
+make yes-molecule yes-rigid yes-kspace yes-openmp
 ```
 
 ```bash
-export PATH=$PATH:/your/path
+sed -i 's/-restrict/-Wrestrict/' MAKE/OPTIONS/Makefile.omp
+```
+
+```bash
+make omp -j "$(nproc)"
+```
+
+```bash
+cp lmp_omp lammps/bench/
+```
+### Run
+```bash
+cd lammps/bench/
+```
+
+```bash
+mpirun -np $1 ./lmp_omp -sf omp -pk omp $2 -in in.rhodo > lmp_serial_rhodo.out
+cat lmp_serial_rhodo.out
 ```
