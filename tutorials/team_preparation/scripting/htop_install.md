@@ -146,9 +146,46 @@ source ~/.bashrc
 echo "Module file for htop has been created at ~/modulefiles/htop"
 ```
 
-Or if lmod isn't working on your PC(test witt ml avail) do the following:
+Or if lmod isn't working on your PC(test with ml avail) do the following:
 
 ```bash
 echo "export PATH="$INSTALL_DIR/bin:$PATH"" >> ~/.bashrc
 source ~/.bashrc
+```
+## Tutorial
+Try to make a script to automate the installation of [LAMMPS](https://www.lammps.org/#gsc.tab=0)  
+Build:
+```
+git clone -b stable https://github.com/lammps/lammps.git
+```
+
+```
+cd lammps/src
+```
+
+```
+make clean-all
+make yes-molecule yes-rigid yes-kspace yes-openmp
+```
+
+```
+sed -i 's/-restrict/-Wrestrict/' MAKE/OPTIONS/Makefile.omp
+```
+
+```
+make omp -j "$(nproc)"
+```
+
+```
+cp lmp_omp lammps/bench/
+```
+
+Run:
+```
+cd lammps/bench/
+```
+
+```
+mpirun -np $1 ./lmp_omp -sf omp -pk omp $2 -in in.rhodo > lmp_serial_rhodo.out
+cat lmp_serial_rhodo.out
 ```
