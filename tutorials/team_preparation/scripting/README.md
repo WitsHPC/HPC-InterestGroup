@@ -210,7 +210,7 @@ make omp -j "$(nproc)"
 ```
 
 ```bash
-cp lmp_omp lammps/bench/
+cp lmp_omp ../bench/
 ```
 ### Run
 ```bash
