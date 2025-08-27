@@ -146,7 +146,7 @@ source ~/.bashrc
 echo "Module file for htop has been created at ~/modulefiles/htop"
 ```
 
-Or if lmod isn't working on your PC(test witt ml avail) do the following:
+Or if lmod isn't working on your PC(test with ml avail) do the following:
 
 ```bash
 echo "export PATH="$INSTALL_DIR/bin:$PATH"" >> ~/.bashrc
