@@ -34,12 +34,10 @@ If your system uses `python3` instead of `python`, run:
 python3 tutorial_app.py
 ```
 
-At the end of the tutorial, the learner receives:
+At the end of the tutorial, you should see:
 
 - a `Run ID`
 - a `Completion hash`
-
-They can send both values to the instructor after completing the exercise.
 
 ## Linux Guide
 
