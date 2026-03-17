@@ -6,6 +6,8 @@ This project provides a guided terminal tutorial based on Ubuntu's "Command line
 
 The application runs in a simulated Linux environment. Learners complete a sequence of levels covering navigation, file management, search, filtering, and simple pipelines without affecting the host filesystem.
 
+Each session includes a maximum of three hints. The learner can reveal a hint with the `hint` command, and remaining hints are shown as hearts in the interface.
+
 ## Requirements
 
 - Python 3.9 or newer recommended
