@@ -302,6 +302,8 @@ class TutorialApp:
         self.fs = SimFS(learner_name)
         self.run_id = secrets.token_hex(4)
         self.flags: set[str] = set()
+        self.max_hints = 3
+        self.hints_used = 0
         self.lessons = self._build_lessons()
 
     def _build_lessons(self) -> list[Lesson]:
@@ -465,7 +467,7 @@ class TutorialApp:
             print(box_title(f"LEVEL {index}: {lesson.title}", self._ascii_subtitle(lesson.title)))
             print(wrap(lesson.intro))
             print(f"Goal: {lesson.goal}")
-            print("Hint: hidden. Type `hint` to reveal it.")
+            print(f"Hints: {self._hint_hearts()}  Type `hint` to reveal one.")
             print("Checks: type `status` to inspect progress.")
 
             while True:
@@ -506,7 +508,8 @@ class TutorialApp:
             "cat, cp, mv, rm -r, grep, find, and simple `| wc -l` pipelines, plus clear, help, hint, status, exit."
         ))
         print(wrap(
-            "Run this on any operating system with Python 3. Each level unlocks only after you complete the required task."
+            "Run this on any operating system with Python 3. Each level unlocks only after you complete the required task. "
+            "The tutorial includes three hints for the entire session."
         ))
 
     def _prompt(self) -> str:
@@ -522,11 +525,14 @@ class TutorialApp:
             return "", False
         if stripped == "help":
             return (
-                "Available commands: pwd, cd, ls, mkdir, touch, echo >, echo >>, cat, cp, mv, rm -r, grep, find, | wc -l, clear, help, hint, status, exit",
+                "Available commands: pwd, cd, ls, mkdir, touch, echo >, echo >>, cat, cp, mv, rm -r, grep, find, | wc -l, clear, help, hint, status, exit | Hint limit: 3 per session",
                 False,
             )
         if stripped == "hint":
-            return lesson.hint, False
+            if self.hints_used >= self.max_hints:
+                return f"No hints remaining. Hints: {self._hint_hearts()}", False
+            self.hints_used += 1
+            return f"{lesson.hint}\nHints remaining: {self._hint_hearts()}", False
         if stripped == "status":
             return self._status_text(lesson), False
         if stripped == "clear":
@@ -626,11 +632,20 @@ class TutorialApp:
 
     def _status_text(self, lesson: Lesson) -> str:
         checks = self._checks_for_lesson(lesson)
-        lines = [box_title(f"STATUS: {lesson.title}"), f"Location: {self.fs.cwd}", "Progress:"]
+        lines = [
+            box_title(f"STATUS: {lesson.title}"),
+            f"Location: {self.fs.cwd}",
+            f"Hints: {self._hint_hearts()}",
+            "Progress:",
+        ]
         for label, done in checks:
             marker = "[x]" if done else "[ ]"
             lines.append(f"{marker} {label}")
         return "\n".join(lines)
+
+    def _hint_hearts(self) -> str:
+        remaining = self.max_hints - self.hints_used
+        return " ".join(["♥"] * remaining + ["♡"] * self.hints_used)
 
     def _checks_for_lesson(self, lesson: Lesson) -> list[tuple[str, bool]]:
         fs = self.fs
