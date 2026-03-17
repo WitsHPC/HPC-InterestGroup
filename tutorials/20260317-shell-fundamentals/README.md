@@ -18,7 +18,7 @@ Official Python downloads:
 
 ## Files
 
-- `tutorial_app.py`: primary cross-platform entrypoint
+- `tutorial_app.py`
 
 ## Quick Start
 
