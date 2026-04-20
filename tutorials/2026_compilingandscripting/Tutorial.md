@@ -6,7 +6,8 @@ In this tutorial, you will write a `.sh` script that downloads, extracts, and
 installs `rank-amateur-cowsay`. After the script finishes, you will restart your
 terminal and run `cowsay` with your student number.
 
-At the end, submit a screenshot of your final `cowsay` output.
+At the end, submit your `install_cowsay.sh` script and a screenshot of your
+final `cowsay` output.
 
 ## Create the Script
 
@@ -103,9 +104,14 @@ For example:
 cowsay "12345678"
 ```
 
-## Submit Your Screenshot
+## Submit Your Work
 
 Take a screenshot showing the final `cowsay` output in your terminal.
+
+Submit:
+
+- your `install_cowsay.sh` script
+- a screenshot of your final `cowsay` output
 
 Your screenshot should show:
 
