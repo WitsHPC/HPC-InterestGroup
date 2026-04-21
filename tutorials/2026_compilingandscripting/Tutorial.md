@@ -57,7 +57,7 @@ cd rank-amateur-cowsay-master
 Add this command to the `.sh` file to install `cowsay` into your home directory:
 
 ```bash
-./install.sh ./
+./install.sh ~
 ```
 
 Save and close the file.
@@ -101,9 +101,8 @@ cowsay "<your student number>"
 For example:
 
 ```bash
-cd /root/of/install
-cd ./bin
-cowsay "12345678"
+cd ~/bin/
+./cowsay "12345678"
 ```
 if your `perl` env is not working try the following:
 
