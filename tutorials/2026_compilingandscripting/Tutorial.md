@@ -101,6 +101,8 @@ cowsay "<your student number>"
 For example:
 
 ```bash
+cd /root/of/install
+cd ./bin
 cowsay "12345678"
 ```
 if your `perl` env is not working try the following:
