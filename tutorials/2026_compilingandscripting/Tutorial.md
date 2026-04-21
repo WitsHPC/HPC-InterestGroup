@@ -57,7 +57,7 @@ cd rank-amateur-cowsay-master
 Add this command to the `.sh` file to install `cowsay` into your home directory:
 
 ```bash
-./install.sh ~
+./install.sh ./
 ```
 
 Save and close the file.
@@ -102,6 +102,11 @@ For example:
 
 ```bash
 cowsay "12345678"
+```
+if your `perl` env is not working try the following:
+
+```bash
+perl cowsay -f ./cows/udder.cow "12345678"
 ```
 
 ## Submit Your Work
