@@ -5,6 +5,11 @@
 
 Compiling a fun snake game in the terminal using a shell script.
 
+If you are using your own PC you need to install:
+```
+sudo apt install libncurses-dev
+```
+
 Instead of running every command one at a time, we will add each step to a
 `.sh` file. A shell script lets us save terminal commands and run them again
 later.
