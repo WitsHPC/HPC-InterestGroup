@@ -107,10 +107,6 @@ cowsay "12345678"
 ```
 if your `perl` env is not working try the following:
 
-```bash
-perl cowsay -f ./cows/udder.cow "12345678"
-```
-
 ## Submit Your Work
 
 Take a screenshot showing the final `cowsay` output in your terminal.
